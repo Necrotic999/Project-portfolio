@@ -18,7 +18,7 @@ header{
 header .container{
     background: transparent;
     display: flex;
-    padding: 0 16px;
+    /* padding: 0 16px; */
 }
 
 .menu-link{
@@ -47,6 +47,9 @@ header .container{
 }
 
 @media screen and (min-width: 768px) {
+
+
+    
 
     header .container{
         padding: 0 32px;
@@ -90,6 +93,7 @@ font-weight: 500;
 line-height: normal;
 letter-spacing: -0.32px;
 text-decoration-line: underline;
+cursor: pointer;
     }
 
     .logo{
@@ -97,3 +101,233 @@ text-decoration-line: underline;
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+@media screen and (max-width: 768px) {
+  
+  .modal {
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(270deg, #1C1D20 49.69%, #69292D 67.71%, #ED3B44 99.91%);
+    /* @media (min-resolution: 192dpi){
+      .hero-image{
+       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image_2x_320.jpg);
+      }} */
+      
+    padding: 240px 0 40px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: perspective(200px) translate(100%, 0) rotateY(-45deg) scale(0.1);
+    visibility: hidden;
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  }
+
+  .active{
+    transform: perspective(200px) translate(0, 0) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
+
+
+  .modal-button-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    transition: transform 500ms ease-in-out;
+  }
+  
+  
+  .modal-button-close:hover {
+    transform: scale(1.5);
+  }
+  
+  .modal-svg {
+    display: block;
+    stroke: #FAFAFA;
+  }
+  
+  .modal-list-item a {
+    display: block;
+    width: 119px;
+    height: 42px;
+    padding: 12px 0 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    color: #FAFAFA;
+    text-align: center;
+    font-family: "Inter Tight";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+  
+  .modal-list-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  
+  
+  .modal-list-item:hover a {
+    background-color: #fbfbfb;
+    color: #ED3B44;
+    border: none;
+  }
+  
+  .nav-modal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+  }
+  
+  .modal-order-link {
+    width: auto;
+    height: 50px;
+    padding: 16px 41px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fbfbfb;
+    font-family: "Inter Tight";
+font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    border: none;
+    margin: 0 auto;
+    border: 1px solid rgba(251, 251, 251, 0.2);
+  }
+  
+  .modal-order-link:hover {
+    background-color: #fbfbfb;
+    color: #ED3B44;
+    border: none;
+  }
+  }
+  
+  
+
+  @media screen and (min-width: 768px) {
+  
+    .modal {
+      width: 300px;
+      height: 500px;
+   margin: 78px auto 0;
+
+      
+      padding: 10px 0 40px;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      transform: translate(0, -40%) scale(0.1);
+      visibility: hidden;
+      transition: all 1s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    }
+  
+    .active{
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
+  
+  
+  
+  
+  
+    .modal-button-close {
+      display: none;
+    }
+    
+    
+    .modal-button-close:hover {
+      transform: scale(1.5);
+    }
+    
+    .modal-svg {
+      display: block;
+      stroke: #FAFAFA;
+    }
+    
+    .modal-list-item a {
+      display: block;
+      width: 119px;
+      height: 42px;
+      padding: 12px 0 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(251, 251, 251, 0.2);
+      color: #FAFAFA;
+      text-align: center;
+      font-family: "Inter Tight";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.32px;
+    }
+    
+    .modal-list-item:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    
+    
+    .modal-list-item:hover a {
+      background-color: #fbfbfb;
+      color: #ED3B44;
+      border: none;
+    }
+    
+    .nav-modal {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+    }
+    
+    .modal-order-link {
+     display: none;
+    }
+    
+    .modal-order-link:hover {
+      background-color: #fbfbfb;
+      color: #ED3B44;
+      border: none;
+    }
+    
+     
+      
+    }
