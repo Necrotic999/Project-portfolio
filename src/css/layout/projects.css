@@ -1,6 +1,6 @@
 .project {
   max-width: 343px;
-  height: 868px;
+  height: 952px;
   padding: 56px 16px 84px 16px;
 }
 
@@ -49,7 +49,4 @@
   width: 100%;
   height: 395px;
   position: relative;
-}
-.is-hidden {
-  display: none;
 }
