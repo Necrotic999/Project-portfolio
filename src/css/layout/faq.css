@@ -40,7 +40,6 @@
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  max-width: 283px;
   color: #fafafa;
 }
 
@@ -71,10 +70,6 @@
     padding: 48px 32px;
   }
 
-  .ac .faq-title {
-    min-width: 575px;
-  }
-
   .ac .faq-element:last-child .faq-title {
     max-width: 485px;
   }
@@ -96,7 +91,7 @@
 
 /* laptop version */
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1440px) {
   .accordion {
     padding: 82px 32px;
   }
