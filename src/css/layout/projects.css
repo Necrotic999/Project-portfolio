@@ -28,9 +28,14 @@
 .button-project {
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
-  width: 80px;
-  height: 45px;
+  width: auto;
+
   background: #fafafa;
+  color: #1c1d20;
+  padding: 13px 18px;
+  font: 500 16px 'Inter Tight', sans-serif;
+  letter-spacing: -0.02em;
+  color: #1c1d20;
 }
 
 .see-project {
@@ -49,4 +54,19 @@
   width: 100%;
   height: 395px;
   position: relative;
+}
+.title-project {
+  font: 500 24px / 1.16667 'Inter Tight', sans-serif;
+  letter-spacing: -0.03em;
+  color: #1c1d20;
+}
+.swiper-button-prev {
+  width: 311px;
+  height: 195px;
+}
+.project-section {
+  font: 600 16px / 1.5 'Inter Tight', sans-serif;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
 }
