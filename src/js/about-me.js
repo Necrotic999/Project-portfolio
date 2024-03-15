@@ -28,8 +28,6 @@ function addSwiper() {
   aboutNextBtn.addEventListener('click', () => {
     aboutSwiper.slideNext()
   })
-
-
 }
 
 function aboutRender(skillsList, query) {
