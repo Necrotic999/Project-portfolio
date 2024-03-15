@@ -23,6 +23,17 @@
     }
 }
 
+
+@media only screen and (min-width: 768px) {
+    .benefits-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 64px;
+        margin-left: auto;
+    }
+}
+
 .benefits-list-item {
     border-radius: 20px;
         padding: 24px;
