@@ -12,6 +12,7 @@
 <symbol id="icon-YT" viewBox="0 0 52 32">
 <path d="M1.554 2.369h5.071l7.756 13.483h0.318l7.716-13.483h5.111l-10.759 17.997v11.634h-4.474v-11.633l-10.739-17.997zM28.362 6.207v-3.838h22.949v3.838h-9.227v25.793h-4.455v-25.793h-9.267z"></path>
 </symbol>
+
 <symbol id="icon-arrow" viewBox="0 0 32 32">
 <path fill="#fafafa" style="fill: var(--color1, #fafafa)" d="M19.269 13.554l-3.81 3.81 0.541 0.541 0.533-0.541-3.81-3.81-1.074 1.074 4.35 4.35 4.343-4.35-1.074-1.074z"></path>
 <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7619" d="M16 0.381c8.626 0 15.619 6.993 15.619 15.619s-6.993 15.619-15.619 15.619c-8.626 0-15.619-6.993-15.619-15.619s6.993-15.619 15.619-15.619z"></path>
