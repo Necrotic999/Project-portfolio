@@ -1,0 +1,63 @@
+.covers {
+  padding: 64px 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  overflow: hidden;
+}
+.project-item {
+  display: flex;
+  gap: 25px;
+  transform: rotate(16deg);
+}
+
+.project-item-img {
+  max-width: initial;
+  width: 282px;
+  height: 162px;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@media only screen and (min-width: 768px) {
+  .project-item-img {
+    width: 544px;
+    height: 314px;
+  }
+}
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
