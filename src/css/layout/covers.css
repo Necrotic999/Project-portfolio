@@ -1,10 +1,11 @@
 .covers {
-  padding: 64px 0;
+  padding-bottom: 64px;
 }
 
 .container {
   margin: 0 auto;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -18,38 +19,47 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 .projects-list {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 11px;
   overflow: hidden;
+  background-image: url('../../img/section-covers-img/bg-pic.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .project-item {
   display: flex;
-  gap: 25px;
+  gap: 20px;
+  margin-left: 100px;
   transform: rotate(16deg);
 }
 
 .project-item-img {
   max-width: initial;
+  object-fit: cover;
   width: 282px;
   height: 162px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+}
+/* .project-item-img.animation {
   animation-name: marqueeLine;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-}
+} */
 @media only screen and (min-width: 768px) {
   .project-item-img {
     width: 544px;
     height: 314px;
+  }
+  .projects-list {
+    gap: 9px;
+  }
+  .project-item {
+    gap: 30px;
   }
 }
 @keyframes marqueeLine {
