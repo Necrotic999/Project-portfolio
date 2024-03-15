@@ -1,0 +1,337 @@
+
+
+header{
+    position: absolute;
+    z-index: 3;
+    top: 32px;
+    width: 100%;
+}
+
+
+.logo{
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+header .container{
+    background: transparent;
+    display: flex;
+}
+
+.menu-link{
+    display: none;
+}
+
+.header-button{
+    display: none;
+}
+
+.header-burger{
+    height: 28px;
+    display: flex;
+    border: none;
+    background: transparent;
+    padding: 0px;
+}
+
+.icon{
+    display: block;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    fill: #FAFAFA;
+    stroke: #FAFAFA;
+}
+
+@media screen and (min-width: 768px) {
+
+    header .container{
+        padding: 0 32px;
+        align-items: center;
+    }
+
+    .header-burger{
+        display: none;
+    }
+
+    .header-button{
+      width: 163px;
+      height: 55px;
+      display: flex;
+      padding: 18px 24px;
+justify-content: center;
+align-items: center;
+border-radius: 60px;
+background: #ED3B44;
+border:none;
+color: #FAFAFA;
+font-family: "Inter Tight";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.32px;
+display: block;
+    }
+
+.header-button:hover{
+  background: #FAFAFA;
+color: #ED3B44;
+}
+
+
+    .menu-link{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+background-color: transparent;
+border-radius: 50%;
+border: 2px solid #FAFAFA;
+        margin-right: auto;
+        margin-left: auto;
+        color:  #FAFAFA;
+font-family: "Inter Tight";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.32px;
+cursor: pointer;
+    }
+
+    .menu-link:hover{
+      color: #ED3B44;
+      background: #FAFAFA;
+      border: none;
+    } 
+
+    .logo{
+        margin-right: 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+  
+  .modal {
+  
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/hero-bg/Hero-bg-tablet1@1x.png);
+    /* @media (min-resolution: 192dpi){
+      .hero-image{
+       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image_2x_320.jpg);
+      }} */
+      
+    padding: 240px 0 40px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: perspective(200px) translate(100%, 0) rotateY(-45deg) scale(0.1);
+    visibility: hidden;
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  }
+
+  .active{
+    transform: perspective(200px) translate(0, 0) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-button-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    transition: transform 500ms ease-in-out;
+  }
+  
+  
+  .modal-button-close:hover {
+    transform: scale(1.5);
+  }
+  
+  .modal-svg {
+    display: block;
+    stroke: #FAFAFA;
+  }
+  
+  .modal-list-item a {
+    display: block;
+    width: 119px;
+    height: 42px;
+    padding: 12px 0 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    color: #FAFAFA;
+    text-align: center;
+    font-family: "Inter Tight";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+  
+  .modal-list-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  
+  
+  .modal-list-item:hover a {
+    background-color: #fbfbfb;
+    color: #ED3B44;
+    border: none;
+  }
+  
+  .nav-modal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+  }
+  
+  .modal-order-link {
+    width: auto;
+    height: 50px;
+    padding: 16px 41px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fbfbfb;
+    font-family: "Inter Tight";
+font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    border: none;
+    margin: 0 auto;
+    border: 1px solid rgba(251, 251, 251, 0.2);
+  }
+  
+  .modal-order-link:hover {
+    background-color: #fbfbfb;
+    color: #ED3B44;
+    border: none;
+  }
+  }
+  
+  
+
+
+
+  
+  @media screen and (min-width: 768px) {
+  
+    .modal {
+      width: 600px;
+      height: 300px;
+   margin: 0 auto;
+  position: relative;
+  
+   top: -15px;
+   z-index: 2;
+      background: transparent;
+      padding: 10px 0 40px;
+      display: flex;
+     
+      opacity: 0;
+      transform: translate(0, -50%) scale(0.1);
+      visibility: hidden;
+      transition: all 1s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    }
+  
+    .active{
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
+  
+  .modal-list{
+    display: flex;
+    gap: 40px;
+  }
+  
+  
+  
+    .modal-button-close {
+      display: none;
+    }
+    
+    
+    .modal-button-close:hover {
+      transform: scale(1.5);
+    }
+    
+    .modal-svg {
+      display: block;
+      stroke: #FAFAFA;
+    }
+    
+    .modal-list-item a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 75px;
+      height: 75px;
+      padding: 12px 0 12px;
+      border-radius: 50%;
+      border: none;
+      background: #ED3B44;
+      color: #FAFAFA;
+      /* text-align: center; */
+      font-family: "Inter Tight";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.32px;
+    }
+    
+    .modal-list-item:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    
+    
+    .modal-list-item:hover a {
+      background-color: #fbfbfb;
+      color: #ED3B44;
+      border: none;
+    }
+    
+    .nav-modal {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+    }
+    
+    .modal-order-link {
+     display: none;
+    }
+    
+    .modal-order-link:hover {
+      background-color: #fbfbfb;
+      color: #ED3B44;
+      border: none;
+    }
+    
+     
+      
+    }
