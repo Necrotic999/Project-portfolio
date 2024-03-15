@@ -159,6 +159,10 @@
     text-transform: uppercase;
 }
 
+.accordion-container-first {
+    margin-bottom: 32px;
+}
+
 
 @media only screen and (min-width: 1440px) {
     .ac-trigger {
@@ -186,6 +190,9 @@
     .ac .ac-panel {
         margin-bottom: 32px;
     }
+    .accordion-container-first {
+        margin-bottom: 64px;
+    }
 }
 
 
@@ -205,6 +212,9 @@
 @media only screen and (min-width: 1440px) {
     .ac .ac-panel {
         padding-left: 696px;
+    }
+    .accordion-container-first {
+        margin-bottom: 96px;
     }
 }
 
@@ -252,6 +262,7 @@
 .about-swiper {
     width: 260px;
     margin: 0;
+    border-radius: 10%;
 }
 
 .swiper-slide[data-swiper-slide-index="0"] {
