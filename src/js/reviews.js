@@ -11,3 +11,4 @@ export async function getReviews() {
     return res.data;
 }
   
+getReviews().then(arr => console.log(arr))
