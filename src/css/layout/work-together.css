@@ -1,0 +1,181 @@
+.work-together {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-together-itro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .work-together-itro {
+    gap: 20px;
+  }
+}
+
+.work-together-logo {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 768px) {
+  .work-together-logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 7px;
+  }
+}
+
+.work-together-title {
+  color: #fafafa;
+  font-family: 'Inter Tight';
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.work-together-title-span {
+  color: #ed3b44;
+}
+
+@media only screen and (min-width: 768px) {
+  .work-together-title {
+    font-size: 64px;
+  }
+}
+
+.work-together-form {
+  margin-top: 63px;
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .work-together-form {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+/* @media only screen and (min-width: 1440px) {
+  .work-together-form {
+  }
+} */
+
+.worwk-together-input {
+  width: 343px;
+  height: 44px;
+  background: #1c1d20;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  text-transform: initial;
+  color: #fafafa;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  padding-bottom: 20px;
+  overflow: hidden;
+  resize: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .worwk-together-input {
+    width: 245px;
+    height: 44px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .worwk-together-input {
+    width: 390px;
+    height: 44px;
+  }
+}
+
+.work-together-btn {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background-color: #ed3b44;
+  border-radius: 50%;
+  border: none;
+  color: #fafafa;
+  margin-top: 16px;
+}
+
+.work-together-btn:hover,
+.work-together-btn:focus {
+  background-color: #e0373f;
+}
+
+@media only screen and (min-width: 768px) {
+  .work-together-btn {
+    width: 150px;
+    height: 150px;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .work-together-btn {
+    margin-left: 54px;
+  }
+}
+
+.worwk-together-adress {
+  margin-top: 74px;
+  padding-bottom: 42px;
+}
+
+@media only screen and (min-width: 768px) {
+  .worwk-together-adress {
+    margin-top: 36px;
+    padding-bottom: 187px;
+  }
+}
+.worwk-together-adress-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .worwk-together-adress-list {
+    gap: 8px;
+  }
+}
+
+.worwk-together-adress-link {
+  color: #fafafa;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: -0.02em;
+  padding: 10px 12px;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.worwk-together-adress-link:hover,
+.worwk-together-adress-link:focus {
+  border: 1px solid #fafafa;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .worwk-together-adress-link {
+    font-size: 16px;
+    padding: 18px 32px;
+  }
+}

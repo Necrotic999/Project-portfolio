@@ -1,0 +1,82 @@
+.covers {
+  padding-bottom: 64px;
+}
+
+/* .container {
+  margin: 0 auto;
+} */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  overflow: hidden;
+  background-image: url('../../img/section-covers-img/bg-pic.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.project-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: initial;
+  }
+  margin-left: 70px;
+  transform: rotate(16deg);
+}
+
+.project-item-img {
+  max-width: initial;
+  object-fit: cover;
+  min-width: 249px;
+  height: 149px;
+  box-sizing: border-box;
+}
+.project-item-img.animation {
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@media only screen and (min-width: 768px) {
+  .project-item-img {
+    min-width: 503px;
+    height: 294px;
+  }
+  .projects-list {
+    gap: 9px;
+  }
+  .project-item {
+    gap: 30px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: initial;
+    }
+  }
+}
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
