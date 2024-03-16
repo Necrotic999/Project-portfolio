@@ -9,6 +9,9 @@
   flex-direction: column;
   position: relative;
 }
+.container {
+  margin: 0 auto;
+}
 
 @media screen and (min-resolution: 192dpi) {
   .hero {
