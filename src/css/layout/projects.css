@@ -80,15 +80,22 @@
   height: 395px;
   position: relative;
 }
-.swiper-wrapper {
+/* .swiper-wrapper {
   display: flex;
   width: 343px;
   height: 395px;
-  /* padding: 100px 16px; */
+  padding: 100px 16px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+} */
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 16px;
 }
 @media only screen and (min-width: 768px) {
   .swiper-wrapper {
@@ -100,4 +107,9 @@
 .swiper-button-prev {
 }
 .swiper-button-next {
+}
+
+.swiper-button-next svg {
+  width: 56px;
+  height: 56px;
 }

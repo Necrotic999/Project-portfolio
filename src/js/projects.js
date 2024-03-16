@@ -1,8 +1,8 @@
-import Swiper from 'swiper';
+import SwiperProject from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new SwiperProject('.swiper-container', {
   slidesPerView: 1,
 
   navigation: {
