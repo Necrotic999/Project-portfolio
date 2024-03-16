@@ -1,52 +1,62 @@
-import Swiper from 'swiper';
+import SwiperProject from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 
-const images = [
+const projects = [
   {
-    original:
-      'https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820_1280.jpg',
-    description: 'Hokkaido Flower',
+    title: 'Project 1',
+    skills: ['#react', '#js', '#node js', '#git'],
+    description: 'Programming Across Borders: Ideas, Technologies, Innovations',
+    githubLink: 'https://github.com',
+    image: '../img/projects/Petlove-tell1@1x.jpg',
   },
   {
-    original:
-      'https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg',
-    description: 'Container Haulage Freight',
+    title: 'Project 2',
+    skills: ['#react', '#js', '#node js', '#git'],
+    description: 'Programming Across Borders: Ideas, Technologies, Innovations',
+    githubLink: 'https://github.com',
+    image: '../img/projects/ReadJourney-tell 1@1x.jpg',
   },
   {
-    original:
-      'https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg',
-    description: 'Container Haulage Freight',
+    title: 'Project 3',
+    skills: ['#react', '#js', '#node js', '#git'],
+    description: 'Programming Across Borders: Ideas, Technologies, Innovations',
+    githubLink: 'https://github.com',
+    image: '../img/projects/Register-tell1@1x.jpg',
   },
 ];
-const swiperWrapper = document.querySelector('.project-swiper-wrapper');
 
-function imageTemplate(img) {
+function createProjectMarkup(project) {
+  const skillsList = project.skills
+    .map(skill => `<li class="button-project">${skill}</li>`)
+    .join('');
+
   return `
-    <div class="swiper-slide">
-      <img width="311" height="195" src="${img.original}" alt="${img.description}">
-    </div>`;
+    <div class="swiper-slide project-swiper-slide">
+    <div class="projects-container-content">
+    <ul class="buttons-container-projects">
+     ${skillsList}
+    </ul>
+    <p class="title-project">${project.description}</p>
+      <a href="${project.githubLink}" target="_blank" class="see-project">See project</a>
+      </div>
+      <div class=container-projects-imgs>
+      <img src="${project.image}" alt="${project.title}" class=projects-img>
+     </div>
+    </div>
+  `;
 }
 
-function imagesTemplate(array) {
-  return array.map(imageTemplate).join('');
-}
+const projectsMarkup = projects.map(createProjectMarkup).join('');
 
-function imagesCreate(array) {
-  const markup = imagesTemplate(array);
-  swiperWrapper.innerHTML = markup;
-}
+const projEl = document.querySelector('.project-swiper-wrapper');
 
-imagesCreate(images);
+projEl.innerHTML = projectsMarkup;
 
-Swiper.use([Navigation, Pagination]);
-
-const mySwiper = new Swiper('.project-swiper-container', {
+new SwiperProject('.swiper-container', {
+  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  keyboard: {
-    enabled: true,
-  },
-  modules: [Navigation],
+  modules: [Navigation, Pagination],
 });
