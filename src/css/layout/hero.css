@@ -35,6 +35,8 @@
 @media screen and (min-width: 1440px) {
   .hero {
     background-image: url(../img/hero-bg/Hero-bg-descktop1@1x.png);
+    background-position: top left;
+    background-size: 50%;
   }
 }
 
@@ -134,18 +136,6 @@
   height: 100%;
   border-radius: 50%;
   border: 1px solid rgba(250, 250, 250, 0.2);
-}
-
-.social-link svg {
-  position: relative;
-  z-index: 1;
-}
-
-@media only screen and (min-width: 768px) {
-  .social-link svg {
-    width: 16px;
-    height: 16px;
-  }
 }
 
 .hero-email {
