@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Inter+Tight:regular,500,600);
 @import 'swiper/css';
 @import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 @import url('./utils/variables.css');
 @import url('./base/common.css');
 @import url('./base/container.css');

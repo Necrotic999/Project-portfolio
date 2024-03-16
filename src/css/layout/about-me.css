@@ -284,7 +284,12 @@
     border-radius: 10%;
 }
 
-.swiper-slide[data-swiper-slide-index="0"] {
+.about-swiper-list .swiper-slide {
+    background-color: transparent;
+    transition: background-color 0.25s ease;
+}
+
+.about-swiper-list .swiper-slide.swiper-slide-active {
     background-color: rgba(237, 59, 68, 1);
 }
 
