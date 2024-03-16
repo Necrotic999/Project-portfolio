@@ -23,6 +23,8 @@
   .hero {
     background-image: url(../../img/hero-bg/Hero-bg-tablet1@1x.png);
     padding-top: 300px;
+    background-position: top left;
+    background-size: 77%;
   }
 }
 
@@ -35,7 +37,6 @@
 @media screen and (min-width: 1440px) {
   .hero {
     background-image: url(../../img/hero-bg/Hero-bg-descktop1@1x.png);
-    background-position: top left;
     background-size: 50%;
   }
 }
