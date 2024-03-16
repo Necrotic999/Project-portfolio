@@ -1,9 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+
 
 const images = [
   {
@@ -22,7 +19,7 @@ const images = [
     description: 'Container Haulage Freight',
   },
 ];
-const swiperWrapper = document.querySelector('.swiper-wrapper');
+const swiperWrapper = document.querySelector('.project-swiper-wrapper');
 
 function imageTemplate(img) {
   return `
@@ -44,7 +41,7 @@ imagesCreate(images);
 
 Swiper.use([Navigation, Pagination]);
 
-const mySwiper = new Swiper('.swiper-container', {
+const mySwiper = new Swiper('.project-swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
