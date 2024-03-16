@@ -25,7 +25,23 @@ header .container{
 }
 
 .header-button{
-    display: none;
+  width: 163px;
+  height: 55px;
+  display: flex;
+  padding: 18px 24px;
+justify-content: center;
+align-items: center;
+border-radius: 60px;
+background: #ED3B44;
+border:none;
+color: #FAFAFA;
+font-family: "Inter Tight";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.32px;
+display: none;
 }
 
 .header-burger{
@@ -57,22 +73,7 @@ header .container{
     }
 
     .header-button{
-      width: 163px;
-      height: 55px;
-      display: flex;
-      padding: 18px 24px;
-justify-content: center;
-align-items: center;
-border-radius: 60px;
-background: #ED3B44;
-border:none;
-color: #FAFAFA;
-font-family: "Inter Tight";
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -0.32px;
+      
 display: block;
     }
 
@@ -127,10 +128,11 @@ cursor: pointer;
     width: 100%;
     height: 100%;
     background-image: url(../../img/hero-bg/Hero-bg-tablet1@1x.png);
-    /* @media (min-resolution: 192dpi){
-      .hero-image{
-       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image_2x_320.jpg);
-      }} */
+    background-size: cover;
+    @media (min-resolution: 192dpi){
+      .modal{
+        background-image: url(../../img/hero-bg/Hero-bg-tablet2@2x.png);
+      }}
       
     padding: 240px 0 40px;
     display: flex;
@@ -139,6 +141,16 @@ cursor: pointer;
     transform: perspective(200px) translate(100%, 0) rotateY(-45deg) scale(0.1);
     visibility: hidden;
     transition: all 1s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  }
+
+  .link.header-button{
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .link.header-button:hover {
+    background-color: #fbfbfb;
+    color: #ED3B44;
   }
 
   .active{
@@ -205,30 +217,6 @@ cursor: pointer;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
-  }
-  
-  .modal-order-link {
-    width: auto;
-    height: 50px;
-    padding: 16px 41px;
-    border-radius: 30px;
-    background-color: transparent;
-    color: #fbfbfb;
-    font-family: "Inter Tight";
-font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.28px;
-    border: none;
-    margin: 0 auto;
-    border: 1px solid rgba(251, 251, 251, 0.2);
-  }
-  
-  .modal-order-link:hover {
-    background-color: #fbfbfb;
-    color: #ED3B44;
-    border: none;
   }
   }
   
@@ -322,16 +310,8 @@ font-size: 14px;
       margin-bottom: auto;
     }
     
-    .modal-order-link {
+    .link.header-button{
      display: none;
     }
     
-    .modal-order-link:hover {
-      background-color: #fbfbfb;
-      color: #ED3B44;
-      border: none;
-    }
-    
-     
-      
     }
