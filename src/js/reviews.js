@@ -20,12 +20,12 @@ getReviews().then(arr => console.log(arr));
 const gallery =document.querySelector('.js-reviews-list')
 
 function createMarkup(arr){
-    return arr.map(arr => {
+    return arr.map(obj => {
 const {
     author,
     avatar_url,
     review
-} = arr;
+} = obj;
 return `
 <li class="gallery-item">
    <img class="gallery-image"
@@ -38,7 +38,7 @@ return `
     }).join('');
 }
 
-async function renderPage(arr){
+async function renderPage(){
     try {
         const res = await getReviews();
         gallery.insertAdjacentHTML('beforeend', createMarkup(res));
