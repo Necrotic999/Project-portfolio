@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(./img/hero-bg/Hero-bg-tell1@1x.png);
+  background-image: url(../../img/hero-bg/Hero-bg-tell1@1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -15,26 +15,26 @@
 
 @media screen and (min-resolution: 192dpi) {
   .hero {
-    background-image: url(./img/hero-bg/Hero-bg-tell2@2x.png);
+    background-image: url(../../img/hero-bg/Hero-bg-tell2@2x.png);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(./img/hero-bg/Hero-bg-tablet1@1x.png);
+    background-image: url(../../img/hero-bg/Hero-bg-tablet1@1x.png);
     padding-top: 300px;
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: url(./img/hero-bg/Hero-bg-tablet2@2x.png);
+    background-image: url(../../img/hero-bg/Hero-bg-tablet2@2x.png);
   }
 }
 
 @media screen and (min-width: 1440px) {
   .hero {
-    background-image: url(./img/hero-bg/Hero-bg-descktop1@1x.png);
+    background-image: url(../../img/hero-bg/Hero-bg-descktop1@1x.png);
     background-position: top left;
     background-size: 50%;
   }
@@ -42,7 +42,7 @@
 
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: url(./img/hero-bg/Hero-bg-descktop2@2x.png);
+    background-image: url(../../img/hero-bg/Hero-bg-descktop2@2x.png);
   }
 }
 
