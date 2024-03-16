@@ -1,0 +1,78 @@
+<section class="work-together">
+  <div class="container">
+    <div class="work-together-itro">
+      <a class="work-together-logo" href="../index.html">
+        <picture>
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/work-together/portfolio_mobile/image.webp    1x,
+              ../img/work-together/portfolio_mobile/image@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <!-- Tablet screen/Desktop screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/work-together/portfolio_laptop_desktop/image.webp    1x,
+              ../img/work-together/portfolio_laptop_desktop/image@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <!-- Default image for larger screens -->
+          <img
+            class="work-together-logo"
+            src="../img/work-together/portfolio_mobile/image.webp"
+            alt="jefferson"
+            width="44"
+            height="44"
+          />
+        </picture>
+      </a>
+      <h2 class="work-together-title">
+        Let’s <span class="work-together-title-span">work</span>
+      </h2>
+    </div>
+    <h2 class="work-together-title">together</h2>
+
+    <form class="work-together-form">
+      <input
+        class="worwk-together-input"
+        type="email"
+        name="user-email"
+        placeholder="clients@gmail.com"
+        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        title="Enter your email"
+        required
+      />
+      <textarea
+        class="worwk-together-input"
+        name="user-comment"
+        cols="1"
+        rows="1"
+        placeholder="comment"
+      ></textarea>
+
+      <button class="work-together-btn" type="button">Send</button>
+    </form>
+
+    <address class="worwk-together-adress">
+      <ul class="worwk-together-adress-list">
+        <li>
+          <a
+            class="worwk-together-adress-link"
+            href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li>
+          <a class="worwk-together-adress-link" href="tel:+3801111111111"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
+    </address>
+  </div>
+</section>
