@@ -49,7 +49,7 @@
 
 @media only screen and (min-width: 1140px) {
     .about-wrapper {
-            margin-bottom: 96px;
+        margin-bottom: 96px;
     }
 }
 
@@ -95,11 +95,11 @@
     /* margin-bottom: 32px; */
 }
 
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {
     .about-img {
-        /* margin-bottom: 64px; */
+         margin-bottom: 64px; 
     }
-}
+}*/
 
 @media only screen and (min-width: 1440px) {
     .about-img {
@@ -124,21 +124,21 @@
 }
 
 .ac .ac-trigger {
-
-    /* text-align: left; */
     width: 100%;
-    display: block;
+    /* display: block; */
+    /* position: relative; */
     cursor: pointer;
     background-color: transparent;
-    transition: color 0.25s ease;
-    position: relative;
     text-decoration: none;
     border: 0;
+
+    transition: color 0.25s ease;
+
+
 }
 
-.ac .ac-trigger::after {
-    content: "+";
-    text-align: center;
+.arrow-icon {
+    text-align: right;
     width: 15px;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -148,6 +148,10 @@
 }
 
 .ac-trigger {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
     color: rgba(250, 250, 250, 0.4);
     /* 1 відступ*/
     margin-bottom: 24px;
@@ -244,11 +248,26 @@
 }
 
 .ac.is-active .ac-panel {
+
     visibility: visible;
 }
 
-.ac.is-active>.ac-header .ac-trigger::after {
-    content: "^";
+
+
+.ac>.ac-header svg {
+    transition: transform 0.25s ease;
+}
+
+@media only screen and (min-width: 768px) {
+    .ac>.ac-header svg {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.ac.is-active>.ac-header svg {
+    transform: rotate(180deg);
+
 }
 
 /*<!--=========== /SECTION =================-->*/
@@ -283,7 +302,7 @@
     transform: translate(-50%, -50%);
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;  
+    line-height: 24px;
     letter-spacing: -0.02em;
     white-space: nowrap;
 }
@@ -299,21 +318,24 @@
 
 @media only screen and (min-width: 768px) {
     .about-swiper {
-            width: 600px;
-        }
+        width: 600px;
+    }
+
     .about-swiper-list-item {
-            width: 200px;
-            height: 200px;
-        }
-        .next-btn svg {
-            width: 40px;
-            height: 40px;
-        }
-        .about-swiper-list-item-par {
-            font-size: 20px;
-            line-height: 24px;
-            letter-spacing: -0.02em;
-        }
+        width: 200px;
+        height: 200px;
+    }
+
+    .next-btn svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .about-swiper-list-item-par {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
