@@ -137,6 +137,10 @@
     <!-- About me -->
     <section id="about" class="about">
   <div class="container">
+    <h2 class="visually-hidden">
+      About best fullstack developer Lloyd Jefferson
+    </h2>
+
     <div class="about-wrapper">
       <p class="about-par">
         I work with people all over the world to create impressive and
@@ -145,12 +149,19 @@
         client's unique personality.
       </p>
 
-      <img
-        class="about-img"
-        srcset="/Project-portfolio/assets/jefferson@1x-817aa82c.jpg 1x, /Project-portfolio/assets/jefferson@2x-9d067c7f.jpg 2x"
-        src="/Project-portfolio/assets/jefferson@1x-817aa82c.jpg"
-        alt="indoor-portrait-handsome-blond-man-working-laptop-white-modern-office"
-      />
+      <picture>
+        <source
+          srcset="/Project-portfolio/assets/jefferson@1x-a095dd1e.webp 1x, /Project-portfolio/assets/jefferson@2x-509e8302.webp 2x"
+          type="image/webp"
+        />
+        <img
+          class="about-img"
+          loading="lazy"
+          src="/Project-portfolio/assets/jefferson@1x-fe7fd6cb.jpg"
+          alt="indoor-portrait-handsome-blond-man-working-laptop-white-modern-office"
+          srcset="/Project-portfolio/assets/jefferson@2x-c0c25326.jpg 2x"
+        />
+      </picture>
     </div>
 
     <ul class="about-acc accordion-container-first">
