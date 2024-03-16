@@ -2,80 +2,731 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Project-portfolio/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/Project-portfolio/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/Project-portfolio/assets/vendor-4ca076aa.js">
+    <link rel="stylesheet" href="/Project-portfolio/assets/vendor-0ded8c46.css">
+    <link rel="stylesheet" href="/Project-portfolio/assets/index-6c94ce5b.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+    <!-- Header -->
+    <header>
+  <div class="container">
+    <a class="logo" href="../index.html"
+      ><img
+        srcset="
+          ../img/header.img/image320.png    1x,
+          ../img/header.img/image@2x320.png 2x
+        "
+        src="../img/header.img/image320.png"
+        alt="jefferson"
+        width="80"
+        height="80" /><svg class="icon" width="84" height="19">
+        <use href="../img/header.img/symbol-defs.svg#icon-jefferson"></use></svg
+    ></a>
+    <a href="#" class="menu-link">Menu</a>
+    <button type="button" class="header-burger"> 
+      <svg class="icon" width="28" height="28">
+        <use href="../img/header.img/symbol-defs.svg#icon-menu-05"></use>
+      </svg>
+    </button>
+    <button type="button" class="header-button">Order the project</button>
+  </div>
+  <div class="modal">
+    <button  class="modal-button-close" type="button">
+      <svg class="modal-svg" width="28" height="28">
+        <use href="../img/header.img/symbol-defs.svg#icon-x"></use>
+      </svg>
+    </button>
+    <nav class="nav-modal">
+      <ul class="modal-list">
+        <li class="modal-list-item">
+          <a class="list-item-link" href="#">About me</a>
+        </li>
+        <li class="modal-list-item">
+          <a class="list-item-link" href="#">Benefits</a>
+        </li>
+        <li class="modal-list-item">
+          <a class="list-item-link" href="#">Projects</a>
+        </li>
+        <li class="modal-list-item">
+          <a class="list-item-link" href="#">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#" class="modal-order-link">Order the projec</a>
+  </div>
 </header>
 
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
-    </section>
 
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+
+
+  
+
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
+    <h1 class="hero-title">
+      Hello.<br />
+      I’m&nbsp;Fullstack developer Lloyd Jefferson.
+    </h1>
+
+    <ul class="social-list">
+      <li class="social-item">
+        <a
+          class="social-link"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+        >
+          IG
+          <!-- <svg class="social-icon" width="14" height="14">
+            <use href="../img/icons.svg/symbol-defs.svg#icon-IG"></use>
+          </svg> -->
+        </a>
+      </li>
+      <li class="social-item">
+        <a
+          class="social-link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          >TG
+          <!-- <svg class="social-icon" width="14 " height="14">
+            <use href="../img/icons.svg/symbol-defs.svg#icon-TG"></use>
+          </svg> -->
+        </a>
+      </li>
+      <li class="social-item">
+        <a
+          class="social-link"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          >YT
+          <!-- <svg class="social-icon" width="14" height="14">
+            <use href="../img/icons.svg/symbol-defs.svg#icon-YT"></use>
+          </svg> -->
+        </a>
+      </li>
+      <li class="social-item">
+        <a
+          class="social-link"
+          href="https://necrotic999.github.io/Project-portfolio/"
+          target="_blank"
+          >GH
+          <!-- <svg class="social-icon" width="14" height="14">
+            <use href="../img/icons.svg/symbol-defs.svg#icon-GH"></use>
+          </svg> -->
+        </a>
+      </li>
+      <p class="hero-text">
+        <a class="hero-email" href="mailto:lloydjefferson@gmail.com"
+          >lloydjefferson@gmail.com</a
+        >
+      </p>
+    </ul>
+  </div>
+</section>
+
+    <!-- About me -->
+    <section id="about" class="about">
+  <div class="container">
+    <div class="about-wrapper">
+      <p class="about-par">
+        I work with people all over the world to create impressive and
+        <span class="about-par-span-red">functional</span>
+        <span class="about-par-span-gray">websites</span> that reflect each
+        client's unique personality.
       </p>
 
-      <ul class="actions">
-        <li class="action">
+      <img
+        class="about-img"
+        srcset="/Project-portfolio/assets/jefferson@1x-817aa82c.jpg 1x, /Project-portfolio/assets/jefferson@2x-9d067c7f.jpg 2x"
+        src="/Project-portfolio/assets/jefferson@1x-817aa82c.jpg"
+        alt="indoor-portrait-handsome-blond-man-working-laptop-white-modern-office"
+      />
+    </div>
+
+    <ul class="about-acc accordion-container-first">
+      <li class="about-acc-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">
+            About me
+            <svg class=".arrow-icon" width="36" height="36">
+              <use href="/Project-portfolio/assets/symbol-defs-b2427684.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">
+            I am Lloyd Jefferson, a talented programmer with extensive expertise
+            in software development. I have an understanding of different
+            programming languages ​​and technologies, always ready to improve my
+            skills. I always follow the latest trends and look for
+            unconventional, creative solutions to problems. I have a high level
+            of analytical skills and am able to effectively solve even the most
+            difficult tasks encountered on the way.
+          </p>
+          <p class="ac-text">
+            Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work.<br />I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to
+            stay abreast of the latest innovations. I have a strong
+            understanding of various programming languages, frameworks and
+            architectural concepts that allow me to create efficient and
+            scalable software.
+          </p>
+        </div>
+      </li>
+      <li class="about-acc-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Role<svg class=".arrow-icon" width="36" height="36">
+              <use href="/Project-portfolio/assets/symbol-defs-b2427684.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <ul class="ac-text">
+            <li>Frontend development</li>
+            <li>HeadlessCMS,Wordpress</li>
+            <li>Blender(enjoy)</li>
+          </ul>
+        </div>
+      </li>
+      <li class="about-acc-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Education<svg class=".arrow-icon" width="36" height="36">
+              <use href="/Project-portfolio/assets/symbol-defs-b2427684.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <ul class="ac-text">
+            <li>
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </li>
+            <li>
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </li>
+            <li>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <div class="about-swiper-wrapper">
+      <div class="swiper about-swiper">
+        <ul class="swiper-wrapper about-swiper-list"></ul>
+      </div>
+      <div class="next-btn">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.6665 20H33.3332"
+            stroke="#3B3B3B"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M23.3335 10L33.3335 20L23.3335 30"
+            stroke="#3B3B3B"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+  <div class="container benefits-container">
+    <h2 class="benefits-title">Benefits of working with me</h2>
+    <div class="benefits-wrapper">
+      <ul class="benefits-list">
+        <li class="benefits-list-item">
+          <div class="icon-wrapper">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="/Project-portfolio/assets/icons-c1b4d529.svg#icon-user"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-title">Expertise</h3>
+          <p class="benefits-item-text">
+            As a highly experienced developer, I have deep knowledge of
+            programming and website development.
+          </p>
+        </li>
+        <li class="benefits-list-item">
+          <div class="icon-wrapper">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="/Project-portfolio/assets/icons-c1b4d529.svg#icon-message"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-title">Communication</h3>
+          <p class="benefits-item-text">
+            Understanding your needs and wants is my priority and I am always
+            open to discussions and corrections.
+          </p>
+        </li>
+        <li class="benefits-list-item">
+          <div class="icon-wrapper">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="/Project-portfolio/assets/icons-c1b4d529.svg#icon-brush"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-title">Art</h3>
+          <p class="benefits-item-text">
+            Thanks to my creative nature, I am ready to accept challenges and
+            help you bring your ideas to life.
+          </p>
+        </li>
+        <li class="benefits-list-item">
+          <div class="icon-wrapper">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="/Project-portfolio/assets/icons-c1b4d529.svg#icon-hourglass"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-title">Urgent execution</h3>
+          <p class="benefits-item-text">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </li>
+      </ul>
+      <a class="benefits-link" href="#">Order the project</a>
+    </div>
+  </div>
+</section>
+
+    <!-- Projects -->
+    <section id="projects" class="project">
+  <div class="container">
+    <h2 class="project-par">Projects</h2>
+    <div class="container-projects">
+      <div class="container-projects-main">
+        <div class="buttons-container-projects">
+          <button class="button-project">#react</button>
+          <button class="button-project">#js</button>
+          <button class="button-project">#node-js</button>
+          <button class="button-project">#git</button>
+        </div>
+        <p class="text">
+          Programming Across Borders: Ideas, Technologies,&nbsp;Innovations
+        </p>
+        <a href="https://github.com" target="_blank" class="see-project"
+          >See project</a
+        >
+      </div>
+      <div class="swiper-container" id="swiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- FAQ -->
+    <section class="accordion container" id="faq">
+  <h2 class="base-title">FAQ</h2>
+  <div class="back">
+    <ul class="faq-list accordion-container">
+      <li class="faq-element ac">
+        <div class="accordion-faq">
+          <div class="wrap">
+            <h3 class="faq-title ac-header">
+              What programming languages are most often used in your project?
+              <button class="faq-btn ac-trigger" type="button">
+                <svg class="icon-faq-up" width="34" height="34">
+                  <use href="/Project-portfolio/assets/symbol-defs-b2427684.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </h3>
+          </div>
+          <div class="faq-description ac-panel">
+            <p class="faq-content ac-text">
+              In the field of web development, there are various technologies
+              and programming languages. Typically, this includes a combination
+              of frontend (client side) and backend (server side) languages.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-element ac">
+        <div class="accordion-faq">
+          <div class="wrap">
+            <h3 class="faq-title ac-header">
+              What are the deadlines for the project?
+              <button class="faq-btn ac-trigger" type="button">
+                <svg class="icon-faq-up" width="34" height="34">
+                  <use href="/Project-portfolio/assets/symbol-defs-b2427684.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </h3>
+          </div>
+          <div class="faq-description ac-panel ac-panel">
+            <p class="faq-content ac-text ac-text">
+              The terms of project implementation depend to a large extent on a
+              number of factors, such as the scope of the project, its
+              complexity, and the availability of resources. Determining exact
+              deadlines is a difficult task, and it usually occurs during the
+              planning phase of the project.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-element ac">
+        <div class="accordion-faq">
+          <div class="wrap">
+            <h3 class="faq-title ac-header">
+              What payment methods do you accept?
+              <button class="faq-btn ac-trigger" type="button">
+                <svg class="icon-faq-up" width="34" height="34">
+                  <use href="/Project-portfolio/assets/symbol-defs-b2427684.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </h3>
+          </div>
+          <div class="faq-description ac-panel ac-panel">
+            <p class="faq-content ac-text ac-text">
+              Payment through credit and debit cards such as Visa, MasterCard,
+              specialized electronic payment systems such as PayPal, as well as
+              payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-element ac">
+        <div class="accordion-faq">
+          <div class="wrap">
+            <h3 class="faq-title ac-header">
+              How can I contact you?
+              <button class="faq-btn ac-trigger" type="button">
+                <svg class="icon-faq-up" width="34" height="34">
+                  <use href="/Project-portfolio/assets/symbol-defs-b2427684.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </h3>
+          </div>
+          <div class="faq-description ac-panel ac-panel">
+            <p class="faq-content ac-text ac-text">
+              In the field of web development, there are various technologies
+              and programming languages. Typically, this includes a combination
+              of frontend (client side) and backend (server side) languages.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-element ac">
+        <div class="accordion-faq">
+          <div class="wrap">
+            <h3 class="faq-title ac-header">
+              Do you provide advice or support?
+              <button class="faq-btn ac-trigger" type="button">
+                <svg class="icon-faq-up" width="34" height="34">
+                  <use href="/Project-portfolio/assets/symbol-defs-b2427684.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </h3>
+          </div>
+          <div class="faq-description ac-panel ac-panel">
+            <p class="faq-content ac-text ac-text">
+              The terms of project implementation depend to a large extent on a
+              number of factors, such as the scope of the project, its
+              complexity, and the availability of resources. Determining exact
+              deadlines is a difficult task, and it usually occurs during the
+              planning phase of the project.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-element ac">
+        <div class="accordion-faq">
+          <div class="wrap">
+            <h3 class="faq-title ac-header">
+              What does the process of developing a software product look like
+              from idea to implementation?
+              <button class="faq-btn ac-trigger" type="button">
+                <svg class="icon-faq-up" width="34" height="34">
+                  <use href="/Project-portfolio/assets/symbol-defs-b2427684.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </h3>
+          </div>
+          <div class="faq-description ac-panel ac-panel">
+            <p class="faq-content ac-text ac-text">
+              Payment through credit and debit cards such as Visa, MasterCard,
+              specialized electronic payment systems such as PayPal, as well as
+              payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <!-- Covers -->
+    <section class="covers">
+  <div class="container">
+    <h2 class="covers-title visually-hidden">Ordered projects</h2>
+    <div class="content">
+      <div class="projects-list-wrapper">
+        <ul class="projects-list">
+          <li class="project-item">
+            <img
+              loading="lazy"
+              class="project-item-img"
+              srcset="
+                ../img/section-covers-img/1-@1x.png 1x,
+                ../img/section-covers-img/1-@2x.png 2x
+              "
+              src="../img/section-covers-img/1-@1x.png"
+              alt="project-hero-view"
+            />
+            <img
+              loading="lazy"
+              class="project-item-img"
+              srcset="
+                ../img/section-covers-img/2-@1x.png 1x,
+                ../img/section-covers-img/2-@2x.png 2x
+              "
+              src="../img/section-covers-img/2-@1x.png"
+              alt="project-hero-view"
+            />
+            <img
+              loading="lazy"
+              class="project-item-img"
+              srcset="
+                ../img/section-covers-img/3-@1x.png 1x,
+                ../img/section-covers-img/3-@2x.png 2x
+              "
+              src="../img/section-covers-img/3-@1x.png"
+              alt="project-hero-view"
+            />
+            <img
+              loading="lazy"
+              class="project-item-img"
+              srcset="
+                ../img/section-covers-img/1-@1x.png 1x,
+                ../img/section-covers-img/1-@2x.png 2x
+              "
+              src="../img/section-covers-img/1-@1x.png"
+              alt="project-hero-view"
+            />
+          </li>
+          <li class="project-item">
+            <img
+              loading="lazy"
+              class="project-item-img"
+              srcset="
+                ../img/section-covers-img/7-@1x.png 1x,
+                ../img/section-covers-img/7-@2x.png 2x
+              "
+              src="../img/section-covers-img/7-@1x.png"
+              alt="project-hero-view"
+            />
+            <img
+              loading="lazy"
+              class="project-item-img"
+              srcset="
+                ../img/section-covers-img/6-@1x.png 1x,
+                ../img/section-covers-img/6-@2x.png 2x
+              "
+              src="../img/section-covers-img/6-@1x.png"
+              alt="project-hero-view"
+            />
+            <img
+              loading="lazy"
+              class="project-item-img"
+              srcset="
+                ../img/section-covers-img/8-@1x.png 1x,
+                ../img/section-covers-img/8-@2x.png 2x
+              "
+              src="../img/section-covers-img/8-@1x.png"
+              alt="project-hero-view"
+            />
+            <img
+              loading="lazy"
+              class="project-item-img"
+              srcset="
+                ../img/section-covers-img/5-@1x.png 1x,
+                ../img/section-covers-img/5-@2x.png 2x
+              "
+              src="../img/section-covers-img/5-@1x.png"
+              alt="project-hero-view"
+            />
+          </li>
+          <li class="project-item">
+            <img
+              loading="lazy"
+              class="project-item-img"
+              srcset="
+                ../img/section-covers-img/4-@1x.png 1x,
+                ../img/section-covers-img/4-@2x.png 2x
+              "
+              src="../img/section-covers-img/4-@1x.png"
+              alt="project-hero-view"
+            />
+            <img
+              loading="lazy"
+              class="project-item-img"
+              srcset="
+                ../img/section-covers-img/9-@1x.png 1x,
+                ../img/section-covers-img/9-@2x.png 2x
+              "
+              src="../img/section-covers-img/9-@1x.png"
+              alt="project-hero-view"
+            />
+            <img
+              loading="lazy"
+              class="project-item-img"
+              srcset="
+                ../img/section-covers-img/10-@1x.png 1x,
+                ../img/section-covers-img/10-@2x.png 2x
+              "
+              src="../img/section-covers-img/10-@1x.png"
+              alt="project-hero-view"
+            />
+            <img
+              loading="lazy"
+              class="project-item-img"
+              srcset="
+                ../img/section-covers-img/8-@1x.png 1x,
+                ../img/section-covers-img/8-@2x.png 2x
+              "
+              src="../img/section-covers-img/8-@1x.png"
+              alt="project-hero-view"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+ <div class="container">
+    <h3 class="reviews-title">Reviews</h3>
+    <ul class="reviews-list js-reviews-list">
+    </ul>
+    <div class="button-container">
+      <button class="button-left" type="button"></button>
+      <button class="button-right" type="button"></button>
+    </div>
+ </div>   
+</section>
+
+
+
+
+    <!-- Work Together -->
+    <section class="work-together">
+  <div class="container">
+    <div class="work-together-itro">
+      <a class="work-together-logo" href="../index.html">
+        <picture>
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/work-together/portfolio_mobile/image.webp    1x,
+              ../img/work-together/portfolio_mobile/image@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <!-- Tablet screen/Desktop screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/work-together/portfolio_laptop_desktop/image.webp    1x,
+              ../img/work-together/portfolio_laptop_desktop/image@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <!-- Default image for larger screens -->
+          <img
+            class="work-together-logo"
+            src="../img/work-together/portfolio_mobile/image.webp"
+            alt="jefferson"
+            width="44"
+            height="44"
+          />
+        </picture>
+      </a>
+      <h2 class="work-together-title">
+        Let’s <span class="work-together-title-span">work</span>
+      </h2>
+    </div>
+    <h2 class="work-together-title">together</h2>
+
+    <form class="work-together-form">
+      <input
+        class="worwk-together-input"
+        type="email"
+        name="user-email"
+        placeholder="clients@gmail.com"
+        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        title="Enter your email"
+        required
+      />
+      <textarea
+        class="worwk-together-input"
+        name="user-comment"
+        cols="1"
+        rows="1"
+        placeholder="comment"
+      ></textarea>
+
+      <button class="work-together-btn" type="button">Send</button>
+    </form>
+
+    <address class="worwk-together-adress">
+      <ul class="worwk-together-adress-list">
+        <li>
           <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
+            class="worwk-together-adress-link"
+            href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
           >
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
+        <li>
+          <a class="worwk-together-adress-link" href="tel:+3801111111111"
+            >+380 11 1111 11 11</a
           >
         </li>
       </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+    </address>
   </div>
 </section>
 
