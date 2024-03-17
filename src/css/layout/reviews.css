@@ -1,5 +1,5 @@
 .reviews {
-  background-color: rgb(21, 22, 22);
+  margin-bottom: 64px;
 }
 
 .reviews-title {
@@ -18,9 +18,10 @@
   box-sizing: border-box;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
-  width: 343px;
   height: 302px;
+  width: 343px;
   padding: 32px 24px;
+  overflow: scroll;
 }
 
 .reviews-list {
@@ -44,32 +45,60 @@
 }
 
 .gallery-image {
-    
   width: 48px;
   height: 48px;
   border-radius: 10px;
   margin-bottom: 32px;
 }
 
-.button-left,
-.button-right {
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
-  width: 68px;
-  height: 68px;
-
-  background-color: transparent;
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
-.button-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+.swiper-butn-rev-prev,
+.swiper-butn-rev-next {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 52px;
+height: 52px;
+
+  /* border-radius: 60px;
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(250, 250, 250, 0.5); */
+}
+
+.arr-btn-left,
+.arr-btn-right {
+  fill: transparent;
+  background-color: transparent;
+  stroke: #fafafa;
+      width: 52px;
+      height: 52px;
 }
 
 @media screen and (min-width: 768px) {
+  .reviews {
+    margin-top:  32px;
+    margin-bottom: 96px;
+  }
+
   .reviews-list {
     display: flex;
-    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .gallery-item {
+    width: 332px;
+  }
+
+  .reviews {
+    margin-bottom: 164px;
   }
 }
