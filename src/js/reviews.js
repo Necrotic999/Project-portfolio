@@ -1,31 +1,28 @@
-
 import axios from 'axios';
-import Swiper from 'swiper';
-// import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
+
+// import swiperRev from 'swiper';
+// import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css/bundle';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import swiperRev from 'swiper';
+
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+import 'swiper/css/bundle';
 
 const BASE_URL = 'https://portfolio-js.b.goit.study/api';
-const END_POINT = "/reviews"
-const revGallery =document.querySelector('.js-reviews-list');
+const END_POINT = '/reviews';
+const revGallery = document.querySelector('.js-reviews-list');
 
 export async function getReviews() {
-
-    const url = `${BASE_URL}${END_POINT}`
-    const {data} = await axios.get(url);
-    return data; 
+  const url = `${BASE_URL}${END_POINT}`;
+  const { data } = await axios.get(url);
+  return data;
 }
-  
-function createMarkup(arr){
-    return arr.map(obj => {
-const {
-    author,
-    avatar_url,
-    review
-} = obj;
-return `
+
+function createMarkup(arr) {
+  return arr
+    .map(obj => {
+      const { author, avatar_url, review } = obj;
+      return `
 <li class="gallery-item swiper-slide">
    <img class="gallery-image"
    src = "${avatar_url}"
@@ -33,20 +30,20 @@ return `
    <h4 class="review-author ">${author}</h4>
    <p class="review-text">${review}</p>
 </li>
-`
-    }).join('');
+`;
+    })
+    .join('');
 }
 
-async function renderPage(){
-    try {
-        const res = await getReviews();
-        revGallery.insertAdjacentHTML('beforeend', createMarkup(res));
-    }catch (error){
-        console.log(error);
-    } 
+async function renderPage() {
+  try {
+    const res = await getReviews();
+    revGallery.insertAdjacentHTML('beforeend', createMarkup(res));
+  } catch (error) {
+    console.log(error);
+  }
 }
-renderPage()
-
+renderPage();
 
 // async function renderPage(){
 //     try {
@@ -62,10 +59,9 @@ renderPage()
 //         console.log(error);
 //         // Display error message to user using alert
 //         alert("Failed to fetch reviews");
-//     } 
+//     }
 // }
 // renderPage();
-
 
 // import { Navigation, Keyboard, Mousewheel, Parallax } from 'swiper/modules';
 
@@ -102,42 +98,69 @@ renderPage()
 //     parallax: true,
 
 // });
-const revList =document.querySelector(".js-reviews-list")
+const revList = document.querySelector('.js-reviews-list');
 
-function addSwiper(){
+// const revSwiper = new swiperRev('.swiper-reviews', {});
 
-    const revSwiper = new Swiper(".swiper-reviews", {
-        modules: [Navigation],
-        speed: 400,
-        slidesPerView: 1,
-        // loop: true,
-        // loopAddBlankSlides: true,
-        navigation: {
-          nextEl: '.swiper-butn-rev-next',
-prevEl: '.swiper-butn-rev-prev',
+// const revSwiper = new SwiperRev('.swiper-reviews', {
+//   modules: [Navigation, Keyboard, Mousewheel],
+//   speed: 400,
+//   slidesPerView: 1,
+//   // loop: true,
+//   // loopAddBlankSlides: true,
+//   navigation: {
+//     nextEl: '.swiper-butn-rev-next',
+//     prevEl: '.swiper-butn-rev-prev',
 
-          breakpoints:{
-            768:{
-                slidesPerView: 2,
+//     breakpoints: {
+//       768: {
+//         slidesPerView: 2,
 
-              1280:{
-                slidesPerView: 4,
-              }  
-            }
-          },
+//         1280: {
+//           slidesPerView: 4,
+//         },
+//       },
+//     },
 
-          keyboard:{
-            enabled:true,
-          },
+//     keyboard: {
+//       enabled: true,
+//     },
 
-          mousewheel: {
-            enabled:true,
-          }
-        },b
-       
-        
-      });
+//     mousewheel: {
+//       enabled: true,
+//     },
+//   },
+// });
+function reviewSwiper() {
+  const swiperReview = new swiperRev('.swiper-reviews', {
+    modules: [Navigation, Keyboard, Mousewheel],
+    direction: 'horizontal',
+    speed: 500,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 16,
 
-  
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      1440: {
+        slidesPerView: 4,
+        spaceBetween: 16,
+      },
+    },
+    navigation: {
+      nextEl: '.swiper-btn-next',
+      prevEl: '.swiper-btn-prev',
+    },
+    keyboard: {
+      enabled: true,
+    },
+    mousewheel: {
+      enabled: true,
+      forceToAxis: true,
+    },
+  });
 }
-addSwiper()
+reviewSwiper();
