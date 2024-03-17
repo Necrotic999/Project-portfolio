@@ -1,55 +1,76 @@
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import SwiperProject from 'swiper';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
+const projectsEl = document.querySelector('.project-swiper-wrapper');
 
-const images = [
+const projects = [
   {
-    original:
-      'https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820_1280.jpg',
-    description: 'Hokkaido Flower',
+    title: 'Project 1',
+    skills: ['#react', '#js', '#node js', '#git'],
+    description: 'Programming Across Borders: Ideas, Technologies, Innovations',
+    githubLink: 'https://github.com',
+    image: '../img/projects/Petlove-tell1@1x.jpg',
   },
   {
-    original:
-      'https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg',
-    description: 'Container Haulage Freight',
+    title: 'Project 2',
+    skills: ['#react', '#js', '#node js', '#git'],
+    description: 'Programming Across Borders: Ideas, Technologies, Innovations',
+    githubLink: 'https://github.com',
+    image: '../img/projects/ReadJourney-tell 1@1x.jpg',
   },
   {
-    original:
-      'https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg',
-    description: 'Container Haulage Freight',
+    title: 'Project 3',
+    skills: ['#react', '#js', '#node js', '#git'],
+    description: 'Programming Across Borders: Ideas, Technologies, Innovations',
+    githubLink: 'https://github.com',
+    image: '../img/projects/Register-tell1@1x.jpg',
   },
 ];
-const swiperWrapper = document.querySelector('.project-swiper-wrapper');
 
-function imageTemplate(img) {
+function createProjectMarkup(project) {
+  const skillsList = project.skills
+    .map(skill => `<li class="project-card">${skill}</li>`)
+    .join('');
+
   return `
-    <div class="swiper-slide">
-      <img width="311" height="195" src="${img.original}" alt="${img.description}">
-    </div>`;
+    <div class="swiper-slide project-swiper-slide">
+    <div class="projects-container-content">
+    <ul class="cards-container-projects">
+     ${skillsList}
+    </ul>
+    <p class="title-project">${project.description}</p>
+      <a href="${project.githubLink}" target="_blank" class="see-project">See project</a>
+     
+      <div class="container-projects-imgs">
+      <img src="${project.image}" alt="${project.title}" class="projects-img">
+     </div>
+      </div>
+    </div>
+  `;
 }
 
-function imagesTemplate(array) {
-  return array.map(imageTemplate).join('');
-}
+const projectsMarkup = projects.map(createProjectMarkup).join('');
 
-function imagesCreate(array) {
-  const markup = imagesTemplate(array);
-  swiperWrapper.innerHTML = markup;
-}
+projectsEl.innerHTML = projectsMarkup;
 
-imagesCreate(images);
+new SwiperProject('.swiper-container', {
+  loop: true,
+  direction: 'horizontal',
+  speed: 500,
+  spaceBetween: 20,
+  centeredSlides: true,
 
-Swiper.use([Navigation, Pagination]);
-
-const mySwiper = new Swiper('.project-swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+  keyboard: {
+    enabled: true,
   },
-  slidesPerView: 'auto',
-  spaceBetween: 10,
+
+  mousewheel: {
+    enabled: true,
+    forceToAxis: true,
+  },
+  modules: [Navigation, Keyboard, Mousewheel],
 });

@@ -74,7 +74,7 @@
 } */
 
 .worwk-together-input {
-  width: 343px;
+  width: 100%;
   height: 44px;
   background: #1c1d20;
   border: none;
@@ -89,6 +89,11 @@
   resize: none;
 }
 
+@media screen and (min-width: 375px) {
+  .worwk-together-input {
+    width: 343px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .worwk-together-input {
     width: 245px;
@@ -162,9 +167,15 @@
   font-size: 14px;
   font-style: normal;
   letter-spacing: -0.02em;
-  padding: 10px 12px;
+  padding: 6px 8px;
   border-radius: 60px;
   border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+@media screen and (min-width: 375px) {
+  .worwk-together-adress-link {
+    padding: 10px 12px;
+  }
 }
 
 .worwk-together-adress-link:hover,
