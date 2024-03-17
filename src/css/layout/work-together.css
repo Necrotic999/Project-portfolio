@@ -106,12 +106,12 @@
   letter-spacing: -0.02em;
 }
 
-.work-together-input. _aproved {
+.work-together-input._approved {
   border-bottom: 1px solid #3cbc81;
   box-shadow: inset 0px 0px 21px 2px rgb(57, 166, 61);
 }
 
-._aproved {
+._approved {
   color: #3cbc81;
   font-family: 'Inter Tight';
   font-size: 14px;

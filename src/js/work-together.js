@@ -1,6 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('work-form');
+  //   const input = document.getElementById('formComment');
+  //   const maxLength = 30;
   form.addEventListener('submit', formSend);
+
+  //   // ================================================================
+  //   // Вміст введеного тексту перевищує розмір поля input
+  //   // ================================================================
+
+  //   input.addEventListener('input', function () {
+  //     if (input.value.length > maxLength) {
+  //       input.value = input.value.substring(0, maxLength); // Обрезаем текст до максимальной длины
+  //       input.setAttribute('title', input.value); // Устанавливаем всплывающую подсказку с полным текстом
+  //     } else {
+  //       input.removeAttribute('title'); // Удаляем всплывающую подсказку, если текст укладывается в пределы максимальной длины
+  //     }
+  //   });
+
+  // ================================================================
+  // Відправка форми
+  // ================================================================
 
   async function formSend(e) {
     e.preventDefault();
@@ -8,13 +27,18 @@ document.addEventListener('DOMContentLoaded', function () {
     let error = formValidate(form);
 
     if (error === 0) {
-      //   formAddAproved(input, 'Succes!');
+      formAddApproved(form.querySelector('._req'), 'Success!');
+
       // Дія при успішному відправленні форми
-      //   aprovedLabel.remove();
+      // approvedLabel.remove();
     } else {
       alert('Заполните обязательные поля');
     }
   }
+
+  // ================================================================
+  // Валідація форми
+  // ================================================================
 
   function formValidate(form) {
     let error = 0;
@@ -62,21 +86,22 @@ document.addEventListener('DOMContentLoaded', function () {
     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
   }
 
-  //   function formAddAproved(input, text) {
-  //     input.parentElement.classList.add('_aproved');
-  //     input.classList.add('_aproved');
-  //     const aprovedLabel = document.createElement('label');
-  //     aprovedLabel.textContent = text;
-  //     aprovedLabel.classList.add('_aproved');
-  //     input.parentElement.append(aprovedLabel);
-  //   }
+  function formAddApproved(input, text) {
+    formRemoveApproved(input);
+    input.parentElement.classList.add('_approved');
+    input.classList.add('_approved');
+    const approvedLabel = document.createElement('label');
+    approvedLabel.textContent = text;
+    approvedLabel.classList.add('_approved');
+    input.parentElement.append(approvedLabel);
+  }
 
-  //   function formRemoveAproved(input) {
-  //     input.parentElement.classList.remove('_aproved');
-  //     input.classList.remove('_aproved');
-  //     const aprovedLabel = input.parentElement.querySelector('label._aproved');
-  //     if (aprovedLabel) {
-  //       aprovedLabel.remove();
-  //     }
-  //   }
+  function formRemoveApproved(input) {
+    input.parentElement.classList.remove('_approved');
+    input.classList.remove('_approved');
+    const approvedLabel = input.parentElement.querySelector('label._approved');
+    if (approvedLabel) {
+      approvedLabel.remove();
+    }
+  }
 });
