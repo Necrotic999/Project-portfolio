@@ -1,5 +1,7 @@
 import SwiperProject from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+
+const projectsEl = document.querySelector('.project-swiper-wrapper');
 
 const projects = [
   {
@@ -27,36 +29,48 @@ const projects = [
 
 function createProjectMarkup(project) {
   const skillsList = project.skills
-    .map(skill => `<li class="button-project">${skill}</li>`)
+    .map(skill => `<li class="project-card">${skill}</li>`)
     .join('');
 
   return `
     <div class="swiper-slide project-swiper-slide">
     <div class="projects-container-content">
-    <ul class="buttons-container-projects">
+    <ul class="cards-container-projects">
      ${skillsList}
     </ul>
     <p class="title-project">${project.description}</p>
       <a href="${project.githubLink}" target="_blank" class="see-project">See project</a>
-      </div>
-      <div class=container-projects-imgs>
-      <img src="${project.image}" alt="${project.title}" class=projects-img>
+     
+      <div class="container-projects-imgs">
+      <img src="${project.image}" alt="${project.title}" class="projects-img">
      </div>
+      </div>
     </div>
   `;
 }
 
 const projectsMarkup = projects.map(createProjectMarkup).join('');
 
-const projEl = document.querySelector('.project-swiper-wrapper');
-
-projEl.innerHTML = projectsMarkup;
+projectsEl.innerHTML = projectsMarkup;
 
 new SwiperProject('.swiper-container', {
   loop: true,
+  direction: 'horizontal',
+  speed: 500,
+  spaceBetween: 20,
+  centeredSlides: true,
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  modules: [Navigation, Pagination],
+  keyboard: {
+    enabled: true,
+  },
+
+  mousewheel: {
+    enabled: true,
+    forceToAxis: true,
+  },
+  modules: [Navigation, Keyboard, Mousewheel],
 });
