@@ -6,8 +6,9 @@ const projectsEl = document.querySelector('.project-swiper-wrapper');
 const projects = [
   {
     title: 'Project 1',
-    skills: ['#react', '#js', '#node js', '#git'],
-    description: 'Programming Across Borders: Ideas, Technologies, Innovations',
+    skills: ['#react', '#js', '#node&nbsp;js', '#git'],
+    description:
+      'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
     image: '../img/projects/Petlove-tell1@1x.jpg',
   },
@@ -61,8 +62,8 @@ new SwiperProject('.swiper-container', {
   centeredSlides: true,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-project',
+    prevEl: '.swiper-button-prev-project',
   },
   keyboard: {
     enabled: true,
