@@ -1,6 +1,6 @@
 import SwiperProject from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
-import 'swiper/css';
+// import 'swiper/css';
 
 const projectsEl = document.querySelector('.project-swiper-wrapper');
 
@@ -56,15 +56,16 @@ const projectsMarkup = projects.map(createProjectMarkup).join('');
 projectsEl.innerHTML = projectsMarkup;
 
 const swiper = new SwiperProject('.project-swiper-container', {
-  loop: true,
+  // loop: false,
+  slidesPerView: 1,
   direction: 'horizontal',
   speed: 500,
   spaceBetween: 20,
   centeredSlides: true,
 
   navigation: {
-    nextEl: '.swiper-button-next-project',
-    prevEl: '.swiper-button-prev-project',
+    prevEl: '.projects-swiper-btn-prev',
+    nextEl: '.projects-swiper-btn-next',
   },
   keyboard: {
     enabled: true,
@@ -76,20 +77,20 @@ const swiper = new SwiperProject('.project-swiper-container', {
   },
   modules: [Navigation, Keyboard, Mousewheel],
 
-  on: {
-    slideChange: function () {
-      const prevButton = document.querySelector('.projects-swiper-btn-prev');
-      const nextButton = document.querySelector('.projects-swiper-btn-next');
-      if (this.isBeginning) {
-        prevButton.classList.add('swiper-button-disabled');
-      } else {
-        prevButton.classList.remove('swiper-button-disabled');
-      }
-      if (this.isEnd) {
-        nextButton.classList.add('swiper-button-disabled');
-      } else {
-        nextButton.classList.remove('swiper-button-disabled');
-      }
-    },
-  },
+  // on: {
+  //   slideChange: function () {
+  //     const prevButton = document.querySelector('.projects-swiper-btn-prev');
+  //     const nextButton = document.querySelector('.projects-swiper-btn-next');
+  //     if (this.isBeginning) {
+  //       prevButton.classList.add('swiper-button-disabled');
+  //     } else {
+  //       prevButton.classList.remove('swiper-button-disabled');
+  //     }
+  //     if (this.isEnd) {
+  //       nextButton.classList.add('swiper-button-disabled');
+  //     } else {
+  //       nextButton.classList.remove('swiper-button-disabled');
+  //     }
+  //   },
+  // },
 });
