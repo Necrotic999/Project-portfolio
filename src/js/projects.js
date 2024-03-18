@@ -6,8 +6,9 @@ const projectsEl = document.querySelector('.project-swiper-wrapper');
 const projects = [
   {
     title: 'Project 1',
-    skills: ['#react', '#js', '#node js', '#git'],
-    description: 'Programming Across Borders: Ideas, Technologies, Innovations',
+    skills: ['#react', '#js', '#node&nbsp;js', '#git'],
+    description:
+      'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
     image: '../img/projects/Petlove-tell1@1x.jpg',
   },
@@ -42,7 +43,7 @@ function createProjectMarkup(project) {
       <a href="${project.githubLink}" target="_blank" class="see-project">See project</a>
      
       <div class="container-projects-imgs">
-      <img src="${project.image}" alt="${project.title}" class="projects-img">
+      <img class="projects-img" srcset="" src="${project.image}" alt="${project.title}" loading="lazy" >
      </div>
       </div>
     </div>
@@ -53,16 +54,18 @@ const projectsMarkup = projects.map(createProjectMarkup).join('');
 
 projectsEl.innerHTML = projectsMarkup;
 
-new SwiperProject('.swiper-container', {
-  loop: true,
+const swiper = new SwiperProject('.project-swiper-container', {
+  modules: [Navigation, Keyboard, Mousewheel],
+
+  slidesPerView: 1,
   direction: 'horizontal',
   speed: 500,
   spaceBetween: 20,
-  centeredSlides: true,
+  // centeredSlides: true,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev',
   },
   keyboard: {
     enabled: true,
@@ -72,5 +75,4 @@ new SwiperProject('.swiper-container', {
     enabled: true,
     forceToAxis: true,
   },
-  modules: [Navigation, Keyboard, Mousewheel],
 });

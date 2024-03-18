@@ -1,6 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
-
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import './accordion';
 
 
@@ -8,26 +7,24 @@ const skillsList = ['HTML/CSS', 'JavaScript', 'React', 'Node.js', 'React Native'
 
 const aboutSkillsList = document.querySelector('.about-swiper-list')
 
-
 function addSwiper() {
-  const aboutNextBtn = document.querySelector('.next-btn')
-
   const aboutSwiper = new Swiper('.about-swiper', {
-  
+    modules: [Navigation, Keyboard, Mousewheel],
     speed: 400,
     slidesPerView: 'auto',
     loop: true,
     loopAddBlankSlides: true,
     navigation: {
-      nextEl: '.swiper-button-next',
+      nextEl: '.next-btn',
     },
-    modules: [Navigation],
-    
+    keyboard: {
+      enabled: true,
+    },
+    mousewheel: {
+      enabled: true,
+      sensitivity: 1,
+    },
   });
-  
-  aboutNextBtn.addEventListener('click', () => {
-    aboutSwiper.slideNext()
-  })
 }
 
 function aboutRender(skillsList, query) {
