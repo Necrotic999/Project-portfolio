@@ -194,6 +194,7 @@
     .ac .ac-panel {
         margin-bottom: 32px;
     }
+
     .accordion-container-first {
         margin-bottom: 64px;
     }
@@ -217,6 +218,7 @@
     .ac .ac-panel {
         padding-left: 696px;
     }
+
     .accordion-container-first {
         margin-bottom: 96px;
     }
@@ -347,4 +349,25 @@
     .about-swiper {
         width: 1200px;
     }
+}
+
+
+
+.about-wrapper .animate {
+    opacity: 0;
+    filter: blur(5px);
+    transition: 0.5s;
+}
+
+.about-wrapper.about-animate .animate {
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.sec2 .animate {
+    transform: translateX(100%);
+}
+
+.sec2.show-animate .animate {
+    transform: translateX(0);
 }
