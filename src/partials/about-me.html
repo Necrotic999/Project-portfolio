@@ -5,27 +5,57 @@
     </h2>
 
     <div class="about-wrapper">
-      <p class="about-par">
-        I work with people all over the world to create impressive and
-        <span class="about-par-span-red">functional</span>
-        <span class="about-par-span-gray">websites</span> that reflect each
-        client's unique personality.
-      </p>
+      <div class="about-par">
+        <p class="animate">
+          I work with people all over the world to create impressive and
+          <span class="about-par-span-red">functional</span>
+          <span class="about-par-span-gray">websites</span> that reflect each
+          client's unique personality.
+        </p>
+      </div>
 
       <picture>
         <source
+          type="image/webp"
+          srcset="
+            ./img/about/jefferson-mobile@1x.webp 1x,
+            ./img/about/jefferson-mobile@2x.webp 2x
+          "
+          media="(max-width: 767.5px)"
+        />
+        <source
+          type="image/webp"
           srcset="
             ./img/about/jefferson@1x.webp 1x,
             ./img/about/jefferson@2x.webp 2x
           "
+          media="(min-width: 768px)"
+        />
+        <source
           type="image/webp"
+          srcset="
+            ./img/about/jefferson@1x.webp        1x,
+            ./img/about/jefferson-mobile@2x.webp 2x
+          "
+        />
+        <source
+          srcset="
+            /assets/images/preview-tablet.jpg        1x,
+            /assets/images/preview-tablet-retina.jpg 2x
+          "
+          media="(max-width: 767.5px)"
+        />
+        <source
+          srcset="
+            /assets/images/preview-desktop.jpg        1x,
+            /assets/images/preview-desktop-retina.jpg 2x
+          "
+          media="(min-width: 768px)"
         />
         <img
           class="about-img"
           loading="lazy"
-          src="./img/about/image.png"
           alt="indoor-portrait-handsome-blond-man-working-laptop-white-modern-office"
-          srcset="./img/about/jefferson@2x.jpg 2x"
         />
       </picture>
     </div>
@@ -55,7 +85,7 @@
             cooperate with colleagues, exchanging ideas and finding optimal
             solutions. Professional maturity allows you to calmly cope with
             challenges and stressful situations, while maintaining a high
-            quality of work.<br />I am always looking for opportunities for
+            quality of work. I am always looking for opportunities for
             self-improvement. I actively study new technologies and practices to
             stay abreast of the latest innovations. I have a strong
             understanding of various programming languages, frameworks and

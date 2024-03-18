@@ -1,7 +1,7 @@
 .accordion {
   margin: auto;
   padding: 0px 16px;
-  margin-bottom: 60px;
+  margin-bottom: 64px;
 }
 
 .base-title {
@@ -10,13 +10,13 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.4);
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 }
 
 .ac .accordion-faq {
   border: none;
   border-top: 1px solid rgba(250, 250, 250, 0.2);
-  padding-top: 19px;
+  padding-top: 22px;
   margin: 0;
 }
 
@@ -83,16 +83,20 @@
   }
 
   .faq-element-one:nth-child(3) .faq-title-one {
-    padding-top: 4px;
+    padding-top: 2px;
   }
 
+    .faq-element-one:nth-child(2) .faq-title-one {
+      padding-top: 24px;
+    }
+
   .faq-element-two:nth-child(1) .faq-title-two {
-    padding-top: 5px;
+    padding-top: 2px;
   }
 
   .faq-element-two:nth-child(2) .faq-title-two,
   .faq-element-two:nth-child(3) .faq-title-two {
-    padding-top: 12px;
+    padding-top: 8px;
   }
 
   .faq-element-two:last-child .faq-title-two {

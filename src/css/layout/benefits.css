@@ -2,6 +2,12 @@
     margin-bottom: 80px;
 }
 
+@media only screen and (min-width: 768px) {
+    .benefits{
+        margin-bottom: 112px;
+    }
+}
+
 @media only screen and (min-width: 1440px) {
     .benefits-container {
             display: flex;
@@ -32,22 +38,13 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
-    .benefits-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 16px;
-        margin-bottom: 64px;
-    }
-}
-
 
 @media only screen and (min-width: 768px) {
     .benefits-list {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 16px;
-        margin-bottom: 64px;
+        margin-bottom: 79px;
         margin-left: auto;
     }
 }
@@ -61,7 +58,7 @@
 
 @media only screen and (min-width: 768px) {
   .benefits-list-item {
-    width: calc((100% - 32px)/2);
+    width: 344px;
   }
 }
 
