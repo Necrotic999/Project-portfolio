@@ -8,11 +8,11 @@ import{A as u,S as p,N as m,K as b,M as h,i as L,a as g}from"./assets/vendor-6c2
       <a href="${e.githubLink}" target="_blank" class="see-project">See project</a>
      
       <div class="container-projects-imgs">
-      <img src="${e.image}" alt="${e.title}" class="projects-img">
+      <img class="projects-img" srcset="" src="${e.image}" alt="${e.title}" loading="lazy" >
      </div>
       </div>
     </div>
-  `}const M=A.map(_).join("");P.innerHTML=M;new p(".swiper-container",{loop:!0,direction:"horizontal",speed:500,spaceBetween:20,centeredSlides:!0,navigation:{nextEl:".swiper-button-next-project",prevEl:".swiper-button-prev-project"},keyboard:{enabled:!0},mousewheel:{enabled:!0,forceToAxis:!0},modules:[m,b,h]});new u(".faq-list-one",{duration:400,showMultiple:!0});new u(".faq-list-two",{duration:400,showMultiple:!0});let v=document.querySelectorAll(".project-item-img"),q=new IntersectionObserver(e=>{e.forEach(r=>{r.isIntersecting?v.forEach(s=>s.classList.add("animation")):v.forEach(s=>s.classList.remove("animation"))})},{threshold:.05});const T=document.querySelector(".covers");q.observe(T);const $="https://portfolio-js.b.goit.study/api",I="/reviews",f=document.querySelector(".js-reviews-list");async function N(){const e=`${$}${I}`,{data:r}=await g.get(e);return r}function B(e){return e.map(r=>{const{author:s,avatar_url:a,review:t}=r;return`
+  `}const M=A.map(_).join("");P.innerHTML=M;new p(".project-swiper-container",{modules:[m,b,h],slidesPerView:1,direction:"horizontal",speed:500,spaceBetween:20,navigation:{nextEl:".swiper-button-next-project",prevEl:".swiper-button-prev-project"},keyboard:{enabled:!0},mousewheel:{enabled:!0,forceToAxis:!0}});new u(".faq-list-one",{duration:400,showMultiple:!0});new u(".faq-list-two",{duration:400,showMultiple:!0});let v=document.querySelectorAll(".project-item-img"),q=new IntersectionObserver(e=>{e.forEach(r=>{r.isIntersecting?v.forEach(s=>s.classList.add("animation")):v.forEach(s=>s.classList.remove("animation"))})},{threshold:.05});const T=document.querySelector(".covers");q.observe(T);const $="https://portfolio-js.b.goit.study/api",I="/reviews",f=document.querySelector(".js-reviews-list");async function N(){const e=`${$}${I}`,{data:r}=await g.get(e);return r}function B(e){return e.map(r=>{const{author:s,avatar_url:a,review:t}=r;return`
 <li class="gallery-item swiper-slide">
    <img class="gallery-image"
    src = "${a}"
