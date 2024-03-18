@@ -1,6 +1,5 @@
 import SwiperProject from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
-// import 'swiper/css';
 
 const projectsEl = document.querySelector('.project-swiper-wrapper');
 
@@ -57,7 +56,7 @@ projectsEl.innerHTML = projectsMarkup;
 
 const swiper = new SwiperProject('.project-swiper-container', {
   modules: [Navigation, Keyboard, Mousewheel],
-  // loop: true,
+
   slidesPerView: 1,
   direction: 'horizontal',
   speed: 500,
@@ -65,8 +64,8 @@ const swiper = new SwiperProject('.project-swiper-container', {
   // centeredSlides: true,
 
   navigation: {
-    nextEl: '.swiper-button-next-project',
-    prevEl: '.swiper-button-prev-project',
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev',
   },
   keyboard: {
     enabled: true,
