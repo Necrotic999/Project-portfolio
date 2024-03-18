@@ -57,7 +57,7 @@ projectsEl.innerHTML = projectsMarkup;
 
 const swiper = new SwiperProject('.project-swiper-container', {
   modules: [Navigation, Keyboard, Mousewheel],
-  // loop: false,
+  // loop: true,
   slidesPerView: 1,
   direction: 'horizontal',
   speed: 500,
