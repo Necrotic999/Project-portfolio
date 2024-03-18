@@ -197,3 +197,7 @@ div .project-swiper-button-next:after {
     padding: 0px;
   }
 }
+.swiper-btn-next-projects.swiper-button-disabled,
+.swiper-btn-prev-projects.swiper-button-disabled {
+  opacity: 0.2;
+}

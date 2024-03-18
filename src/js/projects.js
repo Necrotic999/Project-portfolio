@@ -95,8 +95,8 @@ const swiper = new SwiperProject('.project-swiper-container', {
   // centeredSlides: true,
 
   navigation: {
-    nextEl: '.swiper-btn-next',
-    prevEl: '.swiper-btn-prev',
+    nextEl: '.swiper-btn-next-projects',
+    prevEl: '.swiper-btn-prev-projects',
   },
   keyboard: {
     enabled: true,
