@@ -41,22 +41,23 @@
     <form action="#" class="work-together-form" id="work-form">
       <div class="form-item">
         <input
-          class="work-together-input _req _email _aproved"
+          class="work-together-input _req _email"
           id="formEmail"
           type="text"
           name="email"
           placeholder="clients@gmail.com"
-          pattern="([A-Za-z0-9_.-]{1,})@([A-Za-z0-9_.-]{1,})\.([A-Za-z]{2,8})"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           title="Enter your email"
         />
       </div>
       <div class="form-item">
-        <textarea
-          class="work-together-input _req _aproved"
+        <input
+          class="work-together-input _req"
+          type="text"
+          name="userComment"
           id="formComment"
-          name="user-comment"
           placeholder="comment"
-        ></textarea>
+        />
       </div>
       <button class="work-together-btn" type="submit">Send</button>
     </form>
@@ -77,5 +78,20 @@
         </li>
       </ul>
     </address>
+
+        
+    <div id="modalWindow" style="display: none">
+      <div class="modal-content">
+        <span class="close">
+          <svg class="close-svg" width="24" height="24">
+            <use href=#></use>
+          </svg>
+        </span>
+        <h2>Thank you for your interest in cooperation!</h2>
+        <p>
+          The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch.
+        </p>
+      </div>
   </div>
 </section>

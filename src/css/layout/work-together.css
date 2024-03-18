@@ -85,8 +85,10 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   padding-bottom: 20px;
-  overflow: hidden;
   resize: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .work-together-input:focus {
@@ -104,6 +106,9 @@
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .work-together-input._approved {
@@ -117,6 +122,9 @@
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 @media screen and (min-width: 375px) {
