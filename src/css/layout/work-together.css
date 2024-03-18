@@ -73,6 +73,10 @@
   }
 } */
 
+.form-item{
+  outline: none;
+}
+
 .work-together-input {
   width: 100%;
   height: 44px;
@@ -91,13 +95,18 @@
   white-space: nowrap;
 }
 
+.work-together-input:focus-visible{
+  outline: none;
+}
+
 .work-together-input:focus {
-  box-shadow: inset 0px 0px 10px 2px rgba(250, 250, 250, 1);
+  border-bottom: 1px solid #fff;
+  /* box-shadow: inset 0px 0px 10px 2px rgba(250, 250, 250, 1); */
 }
 
 .work-together-input._error {
   border-bottom: 1px solid #ed3b44;
-  box-shadow: inset 0px 0px 21px 2px rgb(167, 22, 22);
+  /* box-shadow: inset 0px 0px 21px 2px rgb(167, 22, 22); */
 }
 
 ._error {
@@ -113,7 +122,7 @@
 
 .work-together-input._approved {
   border-bottom: 1px solid #3cbc81;
-  box-shadow: inset 0px 0px 21px 2px rgb(57, 166, 61);
+  /* box-shadow: inset 0px 0px 21px 2px rgb(57, 166, 61); */
 }
 
 ._approved {
