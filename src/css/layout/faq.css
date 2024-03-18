@@ -83,16 +83,20 @@
   }
 
   .faq-element-one:nth-child(3) .faq-title-one {
-    padding-top: 4px;
+    padding-top: 2px;
   }
 
+    .faq-element-one:nth-child(2) .faq-title-one {
+      padding-top: 24px;
+    }
+
   .faq-element-two:nth-child(1) .faq-title-two {
-    padding-top: 5px;
+    padding-top: 2px;
   }
 
   .faq-element-two:nth-child(2) .faq-title-two,
   .faq-element-two:nth-child(3) .faq-title-two {
-    padding-top: 12px;
+    padding-top: 8px;
   }
 
   .faq-element-two:last-child .faq-title-two {

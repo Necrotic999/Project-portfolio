@@ -2,6 +2,12 @@
   margin-bottom: 57px;
 }
 
+@media only screen and (min-width: 768px) {
+  .project{
+    margin-bottom: 43px;
+  }
+}
+
 .container {
   margin: 0 auto;
 }
@@ -32,6 +38,12 @@
 }
 
 /* @media only screen and (min-width: 768px) {
+  .project-button-container {
+      gap: 17px;
+  }
+}  */
+
+/* @media only screen and (min-width: 768px) {
   .container-projects {
     width: 704px;
     height: 1191px;
@@ -49,7 +61,7 @@
   .cards-container-projects {
     flex-wrap: nowrap;
     margin-bottom: 164px;
-    padding: 64px 0px 0px 64px;
+    padding: 68px 0px 0px 62px
   }
 }
 .project-card {
@@ -58,7 +70,7 @@
   width: auto;
   background: #fafafa;
   color: #1c1d20;
-  padding: 13px 18px;
+  padding: 15px 18px;
   font: 500 16px 'Inter Tight', sans-serif;
   letter-spacing: -0.02em;
   color: #1c1d20;
@@ -95,6 +107,10 @@
   .see-project {
     margin-left: 64px;
     margin-bottom: 64px;
+    width: 177px;
+    height: 55px;
+    padding: 17px 50px;
+
   }
 }
 .project-swiper-container {
@@ -102,6 +118,13 @@
   overflow: hidden;
   display: flex;
 }
+
+@media only screen and (min-width: 768px) {
+  .project-swiper-container{
+    margin-bottom: 34px;
+  }
+}
+
 .container-projects-imgs {
   border-radius: 0 0 24px 24px;
   display: flex;
@@ -110,6 +133,12 @@
   justify-content: center;
   padding: 100px 16px;
   background: #242527;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-projects-imgs{
+    padding: 120px 16px;
+  }
 }
 
 .project-swiper-wrapper {
@@ -170,6 +199,13 @@ div .project-swiper-button-next:after {
 
 .swiper-button-prev-project {
   right: -30px;
+}
+
+@media only screen and (min-width: 768px) {
+ .project-arr-btn {
+    width: 68px;
+    height: 68px;
+  }
 }
 
 /* .swiper-button-next-project:after,
