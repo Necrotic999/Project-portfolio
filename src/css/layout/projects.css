@@ -194,5 +194,10 @@ div .project-swiper-button-next:after {
   }
   .container-projects-imgs {
     width: 50%;
+    padding: 0px;
   }
+}
+.swiper-btn-next-projects.swiper-button-disabled,
+.swiper-btn-prev-projects.swiper-button-disabled {
+  opacity: 0.2;
 }

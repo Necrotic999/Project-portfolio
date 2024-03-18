@@ -10,7 +10,12 @@ const projects = [
     description:
       'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
-    image: '../img/projects/Petlove-tell1@1x.jpg',
+    image: {
+      tell1: '../img/projects/readjourney-tell1@1x.webp',
+      tell2: '../img/projects/readjourney-tell2@2x.webp',
+      tab1: '../img/projects/readjourney-tab-desk1@1x.webp',
+      tab2: '../img/projects/readjourney-tab-desk2@2x.webp',
+    },
   },
   {
     title: 'Project 2',
@@ -18,7 +23,12 @@ const projects = [
     description:
       'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
-    image: '../img/projects/ReadJourney-tell 1@1x.jpg',
+    image: {
+      tell1: '../img/projects/petlove-tell1@1x.webp',
+      tell2: '../img/projects/petlove-tell2@2x.webp',
+      tab1: '../img/projects/petlove-tablet-desck1@1x.webp',
+      tab2: '../img/projects/petlove-tablet-desck2@2x.webp',
+    },
   },
   {
     title: 'Project 3',
@@ -26,7 +36,12 @@ const projects = [
     description:
       'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
-    image: '../img/projects/Register-tell1@1x.jpg',
+    image: {
+      tell1: '../img/projects/register-tell1@1x.webp',
+      tell2: '../img/projects/register-tell2@2x.webp',
+      tab1: '../img/projects/register-tablet-desck1@1x.webp',
+      tab2: '../img/projects/register-tablet-desck2@2x.webp',
+    },
   },
 ];
 
@@ -44,8 +59,22 @@ function createProjectMarkup(project) {
     <p class="title-project">${project.description}</p>
       <a href="${project.githubLink}" target="_blank" class="see-project">See project</a>
       </div>
+
       <div class="container-projects-imgs">
-      <img class="projects-img" srcset="" src="${project.image}" alt="${project.title}" loading="lazy" >
+      <picture>
+        <source
+        media="(min-width: 768px)"
+          srcset="${project.image.tab1} 1x,
+          ${project.image.tab2} 2x "
+           type="image/webp" />
+        <img
+          class="projects-img"
+          loading="lazy"
+          src="${project.image.tell1}"
+          alt="${project.title}"
+          srcset="${project.image.tell2} 2x"
+        />
+      </picture>
      </div>
      
     </div>
@@ -66,8 +95,8 @@ const swiper = new SwiperProject('.project-swiper-container', {
   // centeredSlides: true,
 
   navigation: {
-    nextEl: '.swiper-btn-next',
-    prevEl: '.swiper-btn-prev',
+    nextEl: '.swiper-btn-next-projects',
+    prevEl: '.swiper-btn-prev-projects',
   },
   keyboard: {
     enabled: true,
