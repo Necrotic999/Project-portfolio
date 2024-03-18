@@ -182,8 +182,6 @@
 }
 
 
-
-
 .ac .ac-trigger:focus {
     color: #8a8a8a;
 }
@@ -360,23 +358,15 @@
     }
 }
 
-
-
 .about-wrapper .animate {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(100%);
 
     transition: 0.5s;
 }
 
 .about-wrapper.about-animate .animate {
     opacity: 1;
-    transform: translateX(0);
 
     filter: blur(0px);
 }
-
-.sec2 .animate {}
-
-.sec2.show-animate .animate {}
