@@ -20,6 +20,16 @@
 <path fill="#FAFAFA" style="fill: var(--color1, #FAFAFA)" d="M19.269 13.554l-3.81 3.81 0.541 0.541 0.533-0.541-3.81-3.81-1.074 1.074 4.35 4.35 4.343-4.35-1.074-1.074z"></path>
 <path fill="none" stroke="#FAFAFA" style="stroke: var(--color1, #FAFAFA)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7619" d="M16 0.381c8.626 0 15.619 6.993 15.619 15.619s-6.993 15.619-15.619 15.619c-8.626 0-15.619-6.993-15.619-15.619s6.993-15.619 15.619-15.619z"></path>
 </symbol>
+<symbol id="icon-arrow-next" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4706" d="M16 0.235c8.707 0 15.765 7.058 15.765 15.765s-7.058 15.765-15.765 15.765c-8.707 0-15.765-7.058-15.765-15.765s7.058-15.765 15.765-15.765z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.9412" d="M10.98 16h10.039"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.9412" d="M17.255 12.235l3.765 3.765-3.765 3.765"></path>
+</symbol>
+<symbol id="icon-arrow-prew" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4706" d="M16 31.765c-8.707 0-15.765-7.058-15.765-15.765s7.058-15.765 15.765-15.765c8.707 0 15.765 7.058 15.765 15.765s-7.058 15.765-15.765 15.765z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.9412" d="M21.020 16h-10.039"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.9412" d="M14.745 19.765l-3.765-3.765 3.765-3.765"></path>
+</symbol>
 </defs>
 </svg>
 
