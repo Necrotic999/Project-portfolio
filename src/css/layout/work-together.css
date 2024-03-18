@@ -85,8 +85,10 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   padding-bottom: 20px;
-  overflow: hidden;
   resize: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .work-together-input:focus {
@@ -104,6 +106,9 @@
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .work-together-input._approved {
@@ -117,6 +122,9 @@
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 @media screen and (min-width: 375px) {
@@ -218,5 +226,76 @@
   .worwk-together-adress-link {
     font-size: 16px;
     padding: 18px 32px;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 16, 0.6);
+  overflow: auto;
+}
+
+.modal-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  padding: 64px 32px;
+  width: 343px;
+  background: #1c1d20;
+}
+
+.modal-title {
+  color: #fafafa;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  letter-spacing: -0.4px;
+  margin-bottom: 16px;
+}
+
+.modal-message {
+  color: rgba(250, 250, 250, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.5px;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  stroke: #fafafa;
+}
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.close-svg {
+  fill: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-content {
+    width: 492px;
+    padding: 64px;
+  }
+  .modal-title {
+    font-size: 18px;
   }
 }

@@ -1,7 +1,7 @@
 <section id="work-together" class="work-together">
   <div class="container">
     <div class="work-together-itro">
-      <a class="work-together-logo" href="../index.html">
+      <a class="work-together-logo" href="./index.html">
         <picture>
           <!-- Mobile screen -->
           <source
@@ -41,22 +41,23 @@
     <form action="#" class="work-together-form" id="work-form">
       <div class="form-item">
         <input
-          class="work-together-input _req _email _aproved"
+          class="work-together-input _req _email"
           id="formEmail"
           type="text"
           name="email"
           placeholder="clients@gmail.com"
-          pattern="([A-Za-z0-9_.-]{1,})@([A-Za-z0-9_.-]{1,})\.([A-Za-z]{2,8})"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           title="Enter your email"
         />
       </div>
       <div class="form-item">
-        <textarea
-          class="work-together-input _req _aproved"
+        <input
+          class="work-together-input _req"
+          type="text"
+          name="userComment"
           id="formComment"
-          name="user-comment"
           placeholder="comment"
-        ></textarea>
+        />
       </div>
       <button class="work-together-btn" type="submit">Send</button>
     </form>
@@ -77,5 +78,6 @@
         </li>
       </ul>
     </address>
+    <div class="modal-container"></div>
   </div>
 </section>

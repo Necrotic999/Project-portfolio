@@ -4,10 +4,12 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  padding-top: 293px;
+  padding-top: 281px;
   display: flex;
   flex-direction: column;
   position: relative;
+  background-position: top left;
+  background-size: 83%;
 }
 .container {
   margin: 0 auto;
@@ -23,7 +25,6 @@
   .hero {
     background-image: url(../../img/hero-bg/Hero-bg-tablet1@1x.png);
     padding-top: 300px;
-    background-position: top left;
     background-size: 77%;
   }
 }
@@ -51,11 +52,9 @@
   font-weight: 500;
   font-size: 12.8vw;
   line-height: 50px;
-  line-height: 1;
-  letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
-  margin-bottom: 200px;
+  margin-bottom: 213px;
 }
 
 .hero-title:hover {
