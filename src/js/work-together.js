@@ -141,7 +141,7 @@ async function formSubmitHandler(e) {
     modalContainer.innerHTML = markup;
     closeModalByClickBackdrop();
   } catch (error) {
-    alert('ooops... something went wrong');
+    showError('ooops... something went wrong');
   }
 }
 
