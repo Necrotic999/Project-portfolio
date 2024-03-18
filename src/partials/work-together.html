@@ -41,20 +41,20 @@
     <form action="#" class="work-together-form" id="work-form">
       <div class="form-item">
         <input
-          class="work-together-input _req _email _aproved"
+          class="work-together-input _req _email"
           id="formEmail"
           type="text"
           name="email"
           placeholder="clients@gmail.com"
-          pattern="([A-Za-z0-9_.-]{1,})@([A-Za-z0-9_.-]{1,})\.([A-Za-z]{2,8})"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           title="Enter your email"
         />
       </div>
       <div class="form-item">
         <input
-          class="work-together-input _req _aproved"
+          class="work-together-input _req"
           type="text"
-          name="user-comment"
+          name="userComment"
           id="formComment"
           placeholder="comment"
         />
@@ -84,8 +84,7 @@
       <div class="modal-content">
         <span class="close">
           <svg class="close-svg" width="24" height="24">
-            <use href="./img/icons/close.svg
-"></use>
+            <use href=#></use>
           </svg>
         </span>
         <h2>Thank you for your interest in cooperation!</h2>
