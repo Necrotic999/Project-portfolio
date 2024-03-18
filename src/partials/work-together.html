@@ -38,25 +38,27 @@
     </div>
     <h2 class="work-together-title">together</h2>
 
-    <form class="work-together-form">
-      <input
-        class="worwk-together-input"
-        type="email"
-        name="user-email"
-        placeholder="clients@gmail.com"
-        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-        title="Enter your email"
-        required
-      />
-      <textarea
-        class="worwk-together-input"
-        name="user-comment"
-        cols="1"
-        rows="1"
-        placeholder="comment"
-      ></textarea>
-
-      <button class="work-together-btn" type="button">Send</button>
+    <form action="#" class="work-together-form" id="work-form">
+      <div class="form-item">
+        <input
+          class="work-together-input _req _email _aproved"
+          id="formEmail"
+          type="text"
+          name="email"
+          placeholder="clients@gmail.com"
+          pattern="([A-Za-z0-9_.-]{1,})@([A-Za-z0-9_.-]{1,})\.([A-Za-z]{2,8})"
+          title="Enter your email"
+        />
+      </div>
+      <div class="form-item">
+        <textarea
+          class="work-together-input _req _aproved"
+          id="formComment"
+          name="user-comment"
+          placeholder="comment"
+        ></textarea>
+      </div>
+      <button class="work-together-btn" type="submit">Send</button>
     </form>
 
     <address class="worwk-together-adress">
