@@ -25,7 +25,7 @@ function createMarkup(arr) {
    <img class="gallery-image"
    src = "${avatar_url}"
    alt = "${author}"/>
-   <h4 class="review-author ">${author}</h4>
+   <h3 class="review-author ">${author}</h3>
    <p class="review-text">${review}</p>
 </li>
 `;
@@ -61,10 +61,12 @@ function reviewSwiper() {
       768: {
         slidesPerView: 2,
       },
+
       1440: {
         slidesPerView: 4,
       },
     },
+
     navigation: {
       nextEl: '.swiper-btn-next',
       prevEl: '.swiper-btn-prev',
@@ -75,6 +77,7 @@ function reviewSwiper() {
     mousewheel: {
       enabled: true,
       forceToAxis: true,
+      sensitivity: 1,
     },
   });
 }
