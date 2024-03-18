@@ -56,16 +56,17 @@ const projectsMarkup = projects.map(createProjectMarkup).join('');
 projectsEl.innerHTML = projectsMarkup;
 
 const swiper = new SwiperProject('.project-swiper-container', {
+  modules: [Navigation, Keyboard, Mousewheel],
   // loop: false,
   slidesPerView: 1,
   direction: 'horizontal',
   speed: 500,
   spaceBetween: 20,
-  centeredSlides: true,
+  // centeredSlides: true,
 
   navigation: {
-    prevEl: '.projects-swiper-btn-prev',
-    nextEl: '.projects-swiper-btn-next',
+    nextEl: '.swiper-button-next-project',
+    prevEl: '.swiper-button-prev-project',
   },
   keyboard: {
     enabled: true,
@@ -75,22 +76,4 @@ const swiper = new SwiperProject('.project-swiper-container', {
     enabled: true,
     forceToAxis: true,
   },
-  modules: [Navigation, Keyboard, Mousewheel],
-
-  // on: {
-  //   slideChange: function () {
-  //     const prevButton = document.querySelector('.projects-swiper-btn-prev');
-  //     const nextButton = document.querySelector('.projects-swiper-btn-next');
-  //     if (this.isBeginning) {
-  //       prevButton.classList.add('swiper-button-disabled');
-  //     } else {
-  //       prevButton.classList.remove('swiper-button-disabled');
-  //     }
-  //     if (this.isEnd) {
-  //       nextButton.classList.add('swiper-button-disabled');
-  //     } else {
-  //       nextButton.classList.remove('swiper-button-disabled');
-  //     }
-  //   },
-  // },
 });
