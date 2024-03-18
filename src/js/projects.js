@@ -15,14 +15,16 @@ const projects = [
   {
     title: 'Project 2',
     skills: ['#react', '#js', '#node js', '#git'],
-    description: 'Programming Across Borders: Ideas, Technologies, Innovations',
+    description:
+      'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
     image: '../img/projects/ReadJourney-tell 1@1x.jpg',
   },
   {
     title: 'Project 3',
     skills: ['#react', '#js', '#node js', '#git'],
-    description: 'Programming Across Borders: Ideas, Technologies, Innovations',
+    description:
+      'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
     image: '../img/projects/Register-tell1@1x.jpg',
   },
@@ -41,11 +43,11 @@ function createProjectMarkup(project) {
     </ul>
     <p class="title-project">${project.description}</p>
       <a href="${project.githubLink}" target="_blank" class="see-project">See project</a>
-     
+      </div>
       <div class="container-projects-imgs">
       <img class="projects-img" srcset="" src="${project.image}" alt="${project.title}" loading="lazy" >
      </div>
-      </div>
+     
     </div>
   `;
 }
