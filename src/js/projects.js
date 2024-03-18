@@ -1,5 +1,6 @@
 import SwiperProject from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+// import 'swiper/css';
 
 const projectsEl = document.querySelector('.project-swiper-wrapper');
 
@@ -43,7 +44,7 @@ function createProjectMarkup(project) {
       <a href="${project.githubLink}" target="_blank" class="see-project">See project</a>
      
       <div class="container-projects-imgs">
-      <img src="${project.image}" alt="${project.title}" class="projects-img">
+      <img class="projects-img" srcset="" src="${project.image}" alt="${project.title}" loading="lazy" >
      </div>
       </div>
     </div>
@@ -54,12 +55,14 @@ const projectsMarkup = projects.map(createProjectMarkup).join('');
 
 projectsEl.innerHTML = projectsMarkup;
 
-new SwiperProject('.swiper-container', {
-  loop: true,
+const swiper = new SwiperProject('.project-swiper-container', {
+  modules: [Navigation, Keyboard, Mousewheel],
+  // loop: true,
+  slidesPerView: 1,
   direction: 'horizontal',
   speed: 500,
   spaceBetween: 20,
-  centeredSlides: true,
+  // centeredSlides: true,
 
   navigation: {
     nextEl: '.swiper-button-next-project',
@@ -73,5 +76,4 @@ new SwiperProject('.swiper-container', {
     enabled: true,
     forceToAxis: true,
   },
-  modules: [Navigation, Keyboard, Mousewheel],
 });
