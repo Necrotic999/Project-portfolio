@@ -11,9 +11,9 @@ const projects = [
       'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
     image: {
-      tell1: '../img/projects/readjourney-tell 1@1x.webp',
+      tell1: '../img/projects/readjourney-tell1@1x.webp',
       tell2: '../img/projects/readjourney-tell2@2x.webp',
-      tab1: '../img/projects/readjourney-tab-desk 1@1x.webp',
+      tab1: '../img/projects/readjourney-tab-desk1@1x.webp',
       tab2: '../img/projects/readjourney-tab-desk2@2x.webp',
     },
   },
@@ -59,9 +59,9 @@ function createProjectMarkup(project) {
     <p class="title-project">${project.description}</p>
       <a href="${project.githubLink}" target="_blank" class="see-project">See project</a>
       </div>
+
       <div class="container-projects-imgs">
-      
-         <picture>
+      <picture>
         <source
         media="(min-width: 768px)"
           srcset="${project.image.tab1} 1x,
