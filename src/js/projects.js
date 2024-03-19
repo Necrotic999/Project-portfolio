@@ -1,8 +1,7 @@
 import SwiperProject from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
-import image from '../img/projects/petlove-tablet-desck1@1x.webp';
-const imgPath = image.slice(0, image.lastIndexOf('/') + 1);
+import imgs from './imgs';
 
 const projectsEl = document.querySelector('.project-swiper-wrapper');
 
@@ -14,10 +13,10 @@ const projects = [
       'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
     image: {
-      tell1: `${imgPath}readjourney-tell1@1x.webp`,
-      tell2: `${imgPath}readjourney-tell2@2x.webp`,
-      tab1: `${imgPath}readjourney-tab-desk1@1x.webp`,
-      tab2: `${imgPath}readjourney-tab-desk2@2x.webp`,
+      tell1: imgs.pr1Tell1,
+      tell2: imgs.pr1Tell2,
+      tab1: imgs.pr1Desk1,
+      tab2: imgs.pr1Desk2,
     },
   },
   {
@@ -27,10 +26,10 @@ const projects = [
       'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
     image: {
-      tell1: `${imgPath}petlove-tell1@1x.webp`,
-      tell2: `${imgPath}petlove-tell2@2x.webp`,
-      tab1: `${imgPath}petlove-tablet-desck1@1x.webp`,
-      tab2: `${imgPath}petlove-tablet-desck2@2x.webp`,
+      tell1: imgs.pr2Tell1,
+      tell2: imgs.pr2Tell2,
+      tab1: imgs.pr2Desk1,
+      tab2: imgs.pr2Desk2,
     },
   },
   {
@@ -40,10 +39,10 @@ const projects = [
       'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
     image: {
-      tell1: `${imgPath}register-tell1@1x.webp`,
-      tell2: `${imgPath}register-tell2@2x.webp`,
-      tab1: `${imgPath}register-tablet-desck1@1x.webp`,
-      tab2: `${imgPath}register-tablet-desck2@2x.webp`,
+      tell1: imgs.pr3Tell1,
+      tell2: imgs.pr3Tell2,
+      tab1: imgs.pr3Desk1,
+      tab2: imgs.pr3Desk2,
     },
   },
 ];
