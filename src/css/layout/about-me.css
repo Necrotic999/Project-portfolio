@@ -155,10 +155,7 @@
     padding: 0;
     color: rgba(250, 250, 250, 0.4);
     margin-bottom: 10px;
-    font-size: 16px;
     font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: -0.02rem;
     text-align: left;
     text-transform: uppercase;
 }
@@ -299,10 +296,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.02em;
     white-space: nowrap;
 }
 
@@ -315,6 +308,7 @@
     height: 28px;
     stroke: var(--arrow);
     fill: none;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
@@ -335,7 +329,6 @@
     .about-swiper-list-item-par {
         font-size: 20px;
         line-height: 24px;
-        letter-spacing: -0.02em;
     }
 }
 

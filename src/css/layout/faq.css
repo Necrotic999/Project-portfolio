@@ -6,9 +6,6 @@
 
 .base-title {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.4);
   margin-bottom: 29px;
 }
@@ -38,18 +35,11 @@
   gap: 40px;
   font-weight: 600;
   font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
   color: #fafafa;
 }
 
 .ac .faq-content-one,
 .ac .faq-content-two {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
   padding: 0;
   padding-top: 16px;

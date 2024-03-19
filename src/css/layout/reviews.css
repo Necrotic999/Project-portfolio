@@ -8,11 +8,7 @@
 
 .reviews-title {
   color: rgba(250, 250, 250, 0.4);
-  font-family: Inter Tight;
-  font-size: 16px;
   font-weight: 600;
-  line-height: 24px;
-  letter-spacing: -0.02rem;
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 32px;
@@ -36,7 +32,6 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: -0.02rem;
   margin-bottom: 8px;
 }
 
@@ -72,14 +67,6 @@
   cursor: pointer;
 }
 
-@media only screen and (min-width: 768px) {
-  .swiper-btn-next,
-  .swiper-btn-prev {
-    width: 68px;
-    height: 68px;
-  }
-}
-
 .swiper-btn-next.swiper-button-disabled,
 .swiper-btn-prev.swiper-button-disabled {
   opacity: 0.2;
@@ -90,38 +77,22 @@
   fill: transparent;
   background-color: transparent;
   stroke: var(--main-text);
-  /* width: 52px;
-  height: 52px; */
 }
 
+@media only screen and (min-width: 768px) {
 
-
-/* @media only screen and (min-width: 768px) {
-  .arr-btn-right,
-  .arr-btn-left {
+  .swiper-btn-next,
+  .swiper-btn-prev {
     width: 68px;
     height: 68px;
   }
-} */
 
-@media screen and (min-width: 768px) {
   .reviews {
     padding-top: 32px;
     padding-bottom: 181px;
   }
-
-  /* .swiper-btn-next,
-.swiper-btn-prev {
-  width: 68px;
-  height: 68px;
 }
 
-.arr-btn-left,
-.arr-btn-right {
-  width: 68px;
-  height: 68px;
-} */
-}
 @media only screen and (min-width: 1280px) {
   .gallery-item {
     width: 332px;
