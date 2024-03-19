@@ -107,3 +107,25 @@ const swiper = new SwiperProject('.project-swiper-container', {
     forceToAxis: true,
   },
 });
+// const projectSwiperContainer = document.querySelector(
+//   '.project-swiper-container'
+// );
+
+// const prevBtn = document.querySelector('.swiper-btn-prev-projects');
+// const nextBtn = document.querySelector('.swiper-btn-next-projects');
+
+// projectSwiperContainer.addEventListener('keydown', handleKeyDown);
+
+// function handleKeyDown(event) {
+//   if (event.key === 'Tab') {
+
+//   }
+
+//   if (event.key === 'ArrowRight') {
+//     swiper.slideNext();
+//   }
+
+//   if (event.key === 'ArrowLeft') {
+//     swiper.slidePrev();
+//   }
+// }
