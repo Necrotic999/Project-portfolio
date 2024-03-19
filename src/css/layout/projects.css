@@ -1,9 +1,9 @@
-.project{
+.project {
   margin-bottom: 57px;
 }
 
 @media only screen and (min-width: 768px) {
-  .project{
+  .project {
     margin-bottom: 43px;
   }
 }
@@ -11,10 +11,7 @@
 .container {
   margin: 0 auto;
 }
-.container-projects-main {
-  /* max-width: 343px;
-  height: 952px; */
-}
+
 .project-name {
   font-weight: 600;
   font-size: 16px;
@@ -37,18 +34,6 @@
   position: relative;
 }
 
-/* @media only screen and (min-width: 768px) {
-  .project-button-container {
-      gap: 17px;
-  }
-}  */
-
-/* @media only screen and (min-width: 768px) {
-  .container-projects {
-    width: 704px;
-    height: 1191px;
-  }
-} */
 .cards-container-projects {
   display: flex;
   flex-wrap: wrap;
@@ -61,7 +46,7 @@
   .cards-container-projects {
     flex-wrap: nowrap;
     margin-bottom: 164px;
-    padding: 68px 0px 0px 62px
+    padding: 68px 0px 0px 62px;
   }
 }
 .project-card {
@@ -110,7 +95,6 @@
     width: 177px;
     height: 55px;
     padding: 17px 50px;
-
   }
 }
 .project-swiper-container {
@@ -120,7 +104,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .project-swiper-container{
+  .project-swiper-container {
     margin-bottom: 34px;
   }
 }
@@ -136,29 +120,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .container-projects-imgs{
+  .container-projects-imgs {
     padding: 120px 16px;
   }
 }
 
 .project-swiper-wrapper {
   display: flex;
-  /* width: 343px; */
 }
-
-/* @media only screen and (min-width: 768px) {
-  .project-swiper-wrapper {
-    width: 704px;
-    height: 625px;
-    background-color: #1c1d20;
-  }
-} */
-
-.projects-img {
-  /* width: 311px;
-  height: 195px; */
-}
-/* 
 .projects-btn-arrows {
   gap: 12px;
   position: absolute;
@@ -175,13 +144,12 @@ div .project-swiper-button-next:after {
 .project-swiper-button-next {
   width: 52px;
   height: 52px;
-} */
+}
 .slide-wrapper-img {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0 0 24px 24px;
-  /* height: 395px; */
 }
 
 .projects-wrapper-btn-arrows {
@@ -207,26 +175,11 @@ div .project-swiper-button-next:after {
 }
 
 @media only screen and (min-width: 768px) {
- .project-arr-btn {
+  .project-arr-btn {
     width: 68px;
     height: 68px;
   }
 }
-
-/* .swiper-button-next-project:after,
-.swiper-button-prev-project:after {
-  content: '';
-} */
-
-/* .swiper-button-next-project,
-.swiper-button-prev-project {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transform-origin: center;
-  fill: transparent;
-  background-color: transparent;
-} */
 @media only screen and (min-width: 1280px) {
   .project-swiper-slide {
     display: flex;
@@ -246,4 +199,12 @@ div .project-swiper-button-next:after {
 .swiper-btn-next-projects.swiper-button-disabled,
 .swiper-btn-prev-projects.swiper-button-disabled {
   opacity: 0.2;
+}
+.project-arr-btn:hover {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+}
+.see-project:hover {
+  background: #e0373f;
 }

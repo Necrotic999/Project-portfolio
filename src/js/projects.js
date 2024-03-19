@@ -92,7 +92,7 @@ const swiper = new SwiperProject('.project-swiper-container', {
   direction: 'horizontal',
   speed: 500,
   spaceBetween: 20,
-  // centeredSlides: true,
+  centeredSlides: true,
 
   navigation: {
     nextEl: '.swiper-btn-next-projects',
@@ -108,24 +108,18 @@ const swiper = new SwiperProject('.project-swiper-container', {
   },
 });
 // const projectSwiperContainer = document.querySelector(
-//   '.project-swiper-container'
+//   '.project-button-container'
 // );
-
-// const prevBtn = document.querySelector('.swiper-btn-prev-projects');
-// const nextBtn = document.querySelector('.swiper-btn-next-projects');
-
 // projectSwiperContainer.addEventListener('keydown', handleKeyDown);
 
 // function handleKeyDown(event) {
 //   if (event.key === 'Tab') {
-
-//   }
-
-//   if (event.key === 'ArrowRight') {
-//     swiper.slideNext();
-//   }
-
-//   if (event.key === 'ArrowLeft') {
-//     swiper.slidePrev();
+//     const prevBtn = document.querySelector('.swiper-btn-prev-projects');
+//     const nextBtn = document.querySelector('.swiper-btn-next-projects');
+//     if (document.activeElement === prevBtn) {
+//       nextBtn.focus();
+//     } else if (document.activeElement === nextBtn) {
+//       prevBtn.focus();
+//     }
 //   }
 // }
