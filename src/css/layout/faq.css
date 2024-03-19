@@ -86,9 +86,9 @@
     padding-top: 2px;
   }
 
-    .faq-element-one:nth-child(2) .faq-title-one {
-      padding-top: 24px;
-    }
+  .faq-element-one:nth-child(2) .faq-title-one {
+    padding-top: 24px;
+  }
 
   .faq-element-two:nth-child(1) .faq-title-two {
     padding-top: 2px;
@@ -160,6 +160,10 @@
 
   .wrap {
     align-items: center;
+  }
+
+  .faq-element-one:nth-child(2) .faq-title-one {
+    padding-top: 12px;
   }
 
   .faq-element-one:nth-child(3) .faq-title-one {
