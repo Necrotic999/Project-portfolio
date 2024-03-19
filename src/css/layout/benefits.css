@@ -68,12 +68,6 @@
     }
 }
 
-/* @media only screen and (min-width: 768px) {
-    .benefits-list-item {
-        width: 332px;
-    }
-} */
-
 .icon-wrapper {
     border-radius: 10px;
         width: 48px;
@@ -99,7 +93,6 @@
 
 .benefits-item-text {
     color: rgba(250, 250, 250, 0.6);
-    /* color: var(--arrow); */
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374.98px) {

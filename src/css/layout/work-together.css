@@ -110,7 +110,7 @@
 }
 
 ._error {
-  color: #e74a3b;
+  /* color: #e74a3b; */
   font-family: 'Inter Tight';
   font-size: 14px;
   line-height: 1.28;
@@ -126,7 +126,7 @@
 }
 
 ._approved {
-  color: #3cbc81;
+  /* color: #3cbc81; */
   font-family: 'Inter Tight';
   font-size: 14px;
   line-height: 1.28;
@@ -134,6 +134,16 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #fafafa;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px #23232329;
 }
 
 @media screen and (min-width: 375px) {

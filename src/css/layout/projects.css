@@ -171,6 +171,7 @@ div .project-swiper-button-next:after {
 .project-arr-btn {
   width: 52px;
   height: 52px;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {

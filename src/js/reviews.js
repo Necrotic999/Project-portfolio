@@ -24,7 +24,8 @@ function createMarkup(arr) {
 <li class="gallery-item swiper-slide">
    <img class="gallery-image"
    src = "${avatar_url}"
-   alt = "${author}"/>
+   alt = "${author}"
+   loading="lazy"/>
    <h3 class="review-author ">${author}</h3>
    <p class="review-text">${review}</p>
 </li>

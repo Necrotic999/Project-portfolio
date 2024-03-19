@@ -61,6 +61,7 @@ function onEmailInput() {
     validEmailState.style.opacity = 0;
     invalidEmailState.style.opacity = 100;
   } else if (!email.value.trim()) {
+    validEmailState.style.opacity = 0;
     email.classList.remove('_error');
     invalidEmailState.style.opacity = 0;
   } else {
@@ -78,6 +79,7 @@ function onCommentInput() {
     validCommentState.style.opacity = 0;
     invalidCommentState.style.opacity = 100;
   } else if (!comment.value.trim()) {
+    validCommentState.style.opacity = 0;
     comment.classList.remove('_error');
     invalidCommentState.style.opacity = 0;
   } else {
