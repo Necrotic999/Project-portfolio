@@ -12,6 +12,7 @@
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 32px;
+  font-size: 16px;
 }
 
 .gallery-item.swiper-slide {
@@ -101,12 +102,13 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1440px) {
   .gallery-item {
     width: 332px;
   }
 
   .reviews {
+    padding-top: 100px;
     padding-bottom: 244px;
   }
 }

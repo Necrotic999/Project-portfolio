@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 97px;
+    padding-bottom: 64px;
     padding-top: 61px;
 }
 
@@ -28,6 +28,7 @@
 @media only screen and (min-width: 1440px) {
     .about {
         padding-top: 96px;
+        padding-bottom: 164px;
     }
 }
 
@@ -129,14 +130,12 @@
 
 .ac .ac-trigger {
     width: 100%;
-
+    font-size: 16px;
     cursor: pointer;
     background-color: transparent;
     text-decoration: none;
     border: 0;
     transition: color 0.25s ease;
-
-
 }
 
 .arrow-icon {
