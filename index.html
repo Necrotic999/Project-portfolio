@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/Project-portfolio/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/Project-portfolio/assets/vendor-500a7ffd.js">
     <link rel="stylesheet" href="/Project-portfolio/assets/vendor-b29ded9f.css">
-    <link rel="stylesheet" href="/Project-portfolio/assets/index-bd57e204.css">
+    <link rel="stylesheet" href="/Project-portfolio/assets/index-36c041eb.css">
   </head>
   <body>
     <!-- Header -->
@@ -786,7 +786,7 @@
     <h2 class="work-together-title">together</h2>
 
     <form action="#" class="work-together-form" id="work-form">
-      <div class="form-item">
+      <label class="form-item label-email" for="formEmail">
         <input
           class="work-together-input _req _email"
           id="formEmail"
@@ -796,8 +796,10 @@
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           title="Enter your email"
         />
-      </div>
-      <div class="form-item">
+        <span class="success">Success!</span>
+        <span class="invalid">Invalid email, try again</span>
+      </label>
+      <label class="form-item label-comment" for="formComment">
         <input
           class="work-together-input _req"
           type="text"
@@ -805,7 +807,9 @@
           id="formComment"
           placeholder="comment"
         />
-      </div>
+        <span class="successComment">Success!</span>
+        <span class="invalidComment">Too short!!!</span>
+      </label>
       <button class="work-together-btn" type="submit">Send</button>
     </form>
 
