@@ -1,21 +1,28 @@
 <header>
   <div class="container">
-    <a class="logo" href="./index.html"
-      ><img
-        media="(min-width: 768px)"
-        srcset="
-          ./img/work-together/portfolio_laptop_desktop/image.webp    1x,
-          ./img/work-together/portfolio_laptop_desktop/image@2x.webp 2x
-        "
-        type="image/webp"
-        src="./img/header.img/image320.png"
-        alt="jefferson"
-        width="80"
-        height="80" /><svg class="icon" width="84" height="19">
-        <use href="./img/icons/icons.svg#icon-jefferson"></use></svg
-    ></a>
+    <a class="logo" href="./index.html">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/work-together/portfolio_laptop_desktop/image.webp    1x,
+            ./img/work-together/portfolio_laptop_desktop/image@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <img
+          src="./img/header.img/image320.png"
+          alt="jefferson"
+          width="80"
+          height="80"
+        />
+      </picture>
+      <svg class="icon" width="84" height="19">
+        <use href="./img/icons/icons.svg#icon-jefferson"></use>
+      </svg>
+    </a>
     <a href="#" class="menu-link">Menu</a>
-    <button type="button" class="header-burger">
+    <button type="button" class="header-burger" aria-label="open menu">
       <svg class="icon" width="28" height="28">
         <use href="./img/icons/icons.svg#icon-menu-05"></use>
       </svg>
@@ -23,7 +30,7 @@
     <a href="#work-together" class="header-button">Order the project</a>
   </div>
   <div class="modal">
-    <button class="modal-button-close" type="button">
+    <button class="modal-button-close" type="button" aria-label="close menu">
       <svg class="modal-svg" width="28" height="28">
         <use href="./img/icons/icons.svg#icon-x"></use>
       </svg>
