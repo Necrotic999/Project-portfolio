@@ -11,10 +11,10 @@ const projects = [
       'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
     image: {
-      tell1: '../img/projects/readjourney-tell1@1x.webp',
-      tell2: '../img/projects/readjourney-tell2@2x.webp',
-      tab1: '../img/projects/readjourney-tab-desk1@1x.webp',
-      tab2: '../img/projects/readjourney-tab-desk2@2x.webp',
+      tell1: './img/projects/readjourney-tell1@1x.webp',
+      tell2: './img/projects/readjourney-tell2@2x.webp',
+      tab1: './img/projects/readjourney-tab-desk1@1x.webp',
+      tab2: './img/projects/readjourney-tab-desk2@2x.webp',
     },
   },
   {
@@ -24,10 +24,10 @@ const projects = [
       'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
     image: {
-      tell1: '../img/projects/petlove-tell1@1x.webp',
-      tell2: '../img/projects/petlove-tell2@2x.webp',
-      tab1: '../img/projects/petlove-tablet-desck1@1x.webp',
-      tab2: '../img/projects/petlove-tablet-desck2@2x.webp',
+      tell1: './img/projects/petlove-tell1@1x.webp',
+      tell2: './img/projects/petlove-tell2@2x.webp',
+      tab1: './img/projects/petlove-tablet-desck1@1x.webp',
+      tab2: './img/projects/petlove-tablet-desck2@2x.webp',
     },
   },
   {
@@ -37,10 +37,10 @@ const projects = [
       'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
     githubLink: 'https://github.com',
     image: {
-      tell1: '../img/projects/register-tell1@1x.webp',
-      tell2: '../img/projects/register-tell2@2x.webp',
-      tab1: '../img/projects/register-tablet-desck1@1x.webp',
-      tab2: '../img/projects/register-tablet-desck2@2x.webp',
+      tell1: './img/projects/register-tell1@1x.webp',
+      tell2: './img/projects/register-tell2@2x.webp',
+      tab1: './img/projects/register-tablet-desck1@1x.webp',
+      tab2: './img/projects/register-tablet-desck2@2x.webp',
     },
   },
 ];
@@ -92,7 +92,7 @@ const swiper = new SwiperProject('.project-swiper-container', {
   direction: 'horizontal',
   speed: 500,
   spaceBetween: 20,
-  // centeredSlides: true,
+  centeredSlides: true,
 
   navigation: {
     nextEl: '.swiper-btn-next-projects',
@@ -107,3 +107,19 @@ const swiper = new SwiperProject('.project-swiper-container', {
     forceToAxis: true,
   },
 });
+// const projectSwiperContainer = document.querySelector(
+//   '.project-button-container'
+// );
+// projectSwiperContainer.addEventListener('keydown', handleKeyDown);
+
+// function handleKeyDown(event) {
+//   if (event.key === 'Tab') {
+//     const prevBtn = document.querySelector('.swiper-btn-prev-projects');
+//     const nextBtn = document.querySelector('.swiper-btn-next-projects');
+//     if (document.activeElement === prevBtn) {
+//       nextBtn.focus();
+//     } else if (document.activeElement === nextBtn) {
+//       prevBtn.focus();
+//     }
+//   }
+// }
