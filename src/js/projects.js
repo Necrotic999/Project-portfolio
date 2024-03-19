@@ -1,7 +1,7 @@
 import SwiperProject from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
-import image from './img/projects/petlove-tablet-desck1@1x.webp';
+import image from '../img/projects/petlove-tablet-desck1@1x.webp';
 const imgPath = image.slice(0, image.lastIndexOf('/') + 1);
 
 const projectsEl = document.querySelector('.project-swiper-wrapper');
