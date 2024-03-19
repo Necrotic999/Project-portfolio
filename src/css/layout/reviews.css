@@ -79,6 +79,14 @@
   stroke: var(--main-text);
 }
 
+.swiper-btn-prev:hover,
+.swiper-btn-next:hover {
+  border-radius: 60%;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+  background-color: rgba(250, 250, 250, 0.1);
+}
+
 @media only screen and (min-width: 768px) {
 
   .swiper-btn-next,
@@ -102,3 +110,4 @@
     padding-bottom: 244px;
   }
 }
+
