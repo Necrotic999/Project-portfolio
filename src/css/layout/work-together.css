@@ -73,8 +73,12 @@
   }
 } */
 
-.form-item{
+.form-item {
   outline: none;
+}
+.label-email,
+.label-comment {
+  position: relative;
 }
 
 .work-together-input {
@@ -93,9 +97,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  position: relative;
 }
 
-.work-together-input:focus-visible{
+.work-together-input:focus-visible {
   outline: none;
 }
 
@@ -307,4 +312,37 @@
   .modal-title {
     font-size: 18px;
   }
+}
+.success,
+.successComment {
+  color: #3cbc81;
+  font-family: 'Inter Tight';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  opacity: 0;
+  transition: all ease-in 300ms;
+  position: absolute;
+  left: 0;
+  top: 44px;
+  margin-top: 4px;
+}
+
+.invalid,
+.invalidComment {
+  color: #e74a3b;
+  font-family: 'Inter Tight';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  opacity: 0;
+  transition: all ease-in 300ms;
+  position: absolute;
+  left: 0;
+  top: 44px;
+  margin-top: 4px;
 }
