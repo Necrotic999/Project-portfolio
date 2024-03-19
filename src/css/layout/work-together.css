@@ -68,11 +68,6 @@
   }
 }
 
-/* @media only screen and (min-width: 1440px) {
-  .work-together-form {
-  }
-} */
-
 .form-item {
   outline: none;
 }
@@ -157,36 +152,6 @@
   .work-together-input {
     width: 390px;
     height: 44px;
-  }
-}
-
-.work-together-btn {
-  width: 100px;
-  height: 100px;
-  flex-shrink: 0;
-  background-color: #ed3b44;
-  border-radius: 50%;
-  border: none;
-  color: #fafafa;
-  margin-top: 16px;
-}
-
-.work-together-btn:hover,
-.work-together-btn:focus {
-  background-color: #e0373f;
-}
-
-@media only screen and (min-width: 768px) {
-  .work-together-btn {
-    width: 150px;
-    height: 150px;
-    margin-top: 0;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .work-together-btn {
-    margin-left: 54px;
   }
 }
 
@@ -345,4 +310,133 @@
   left: 0;
   top: 44px;
   margin-top: 4px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #ed3b44;
+  border-radius: 50%;
+  border: none;
+  color: #fafafa;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .square {
+    width: 150px;
+    height: 150px;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .square {
+    margin-left: 54px;
+  }
+}
+
+.square:hover div:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: rgba(224, 55, 63);
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition: 0.8s;
+  animation: animate 6s linear infinite;
+  box-shadow: rgba(224, 55, 63, 0.56) 0px 22px 70px 4px;
+}
+
+.square div:nth-child(1) {
+  border: none;
+  background: rgba(220, 55, 63);
+}
+
+.square:hover div:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: rgba(224, 55, 63);
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition: 0.8s;
+  animation: animate2 4s linear infinite;
+  box-shadow: rgba(224, 55, 63, 0.56) 0px 22px 70px 4px;
+}
+
+.square div:nth-child(2) {
+  border: none;
+  background: rgba(229, 20, 20);
+}
+
+.square:hover div:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: rgba(224, 55, 63);
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition: 0.8s;
+  animation: animate 10s linear infinite;
+  box-shadow: rgba(224, 55, 63, 0.56) 0px 22px 70px 4px;
+}
+
+.square div:nth-child(3) {
+  border: none;
+  background: rgba(229, 20, 20);
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.work-together-btn {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background-color: #ed3b44;
+  border-radius: 50%;
+  border: none;
+  color: #fafafa;
+  position: relative;
+}
+
+.work-together-btn:hover,
+.work-together-btn:focus {
+  cursor: pointer;
+  scale: 1.1;
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .work-together-btn {
+    width: 150px;
+    height: 150px;
+    margin-top: 0;
+  }
 }
