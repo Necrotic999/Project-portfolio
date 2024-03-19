@@ -180,7 +180,7 @@ div .project-swiper-button-next:after {
     height: 68px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1440px) {
   .project-swiper-slide {
     display: flex;
 
