@@ -1,6 +1,7 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import closeIcon from '../img/icons/icons.svg'
 
 const form = document.querySelector('.work-together-form');
 const email = form.elements.email;
@@ -114,7 +115,7 @@ function modalTemplate(obj) {
       <div class="modal-content">
         <span class="close-btn">
           <svg class="close" width="24" height="24">
-            <use href="./img/icons/icons.svg#icon-x"></use>
+            <use href="${closeIcon}#icon-x"></use>
           </svg>
         </span>
         <h2 class="modal-title">${obj.data.title}</h2>
