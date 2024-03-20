@@ -11,7 +11,7 @@ const projects = [
     skills: ['#react', '#js', '#node&nbsp;js', '#git'],
     description:
       'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
-    githubLink: 'https://github.com',
+    githubLink: 'https://github.com/Necrotic999/Project-portfolio',
     image: {
       tell1: imgs.pr1Tell1,
       tell2: imgs.pr1Tell2,
@@ -24,7 +24,7 @@ const projects = [
     skills: ['#react', '#js', '#node js', '#git'],
     description:
       'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
-    githubLink: 'https://github.com',
+    githubLink: 'https://github.com/Necrotic999/Project-portfolio',
     image: {
       tell1: imgs.pr2Tell1,
       tell2: imgs.pr2Tell2,
@@ -37,7 +37,7 @@ const projects = [
     skills: ['#react', '#js', '#node js', '#git'],
     description:
       'Programming Across<br>Borders: Ideas,<br> Technologies, Innovations',
-    githubLink: 'https://github.com',
+    githubLink: 'https://github.com/Necrotic999/Project-portfolio',
     image: {
       tell1: imgs.pr3Tell1,
       tell2: imgs.pr3Tell2,
